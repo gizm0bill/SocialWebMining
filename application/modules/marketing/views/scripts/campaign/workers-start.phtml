@@ -2,17 +2,18 @@
 	<a name="top"></a>
 	<div class="title">
 		<h1 class="info">
-			Starting campaign: '<?php echo $this->campaign->title ?>' workers
+			Starting campaign '<?php echo $this->campaign->title ?>' workers
 		</h1>
 	</div>
 	<div class="left">
-		<?php if( count( $this->errors ) ) : ?>
-			<ul>
-			<?php foreach( $this->errors as $k => $e ) : ?>
-				<li><strong><?php echo $e ?></strong></li>
-				<li><pre><?php echo $this->outputs[$k] ?></pre></li>
-			<?php endforeach; ?>
-			</ul>
-		<?php endif; ?>
+		<ul>
+		<?php if( count( $this->errors ) ) foreach( $this->errors as $k => $e ) : ?>
+			<li><strong><?php echo $e ?></strong></li>
+			<li><pre><?php echo $this->outputs[$k]; unset( $this->outputs[$k] ); ?></pre></li>
+		<?php endforeach; ?>
+		<?php foreach( $this->outputs as $out ) : ?>
+			<li><pre><?php echo $out ?></pre></li>
+		<?php endforeach; ?>
+		</ul>
 	</div>
 </div>

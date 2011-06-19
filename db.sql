@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 19, 2011 at 07:31 PM
+-- Generation Time: Jun 19, 2011 at 10:15 PM
 -- Server version: 5.5.9
 -- PHP Version: 5.3.5
 
@@ -45,14 +45,16 @@ CREATE TABLE `campaign_attr` (
   `id_campaign` int(11) unsigned NOT NULL,
   `attr` varchar(32) NOT NULL,
   `val` varchar(256) NOT NULL,
-  PRIMARY KEY (`id_campaign`),
-  KEY `attr` (`attr`,`val`)
+  PRIMARY KEY (`id_campaign`,`attr`),
+  KEY `attr` (`attr`),
+  KEY `val` (`val`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `campaign_attr`
 --
 
+INSERT INTO `campaign_attr` VALUES(1, 'twitter_replyto', 'gizm0bill');
 INSERT INTO `campaign_attr` VALUES(1, 'twitter_hashtag', 'zend');
 
 -- --------------------------------------------------------
@@ -77,6 +79,15 @@ CREATE TABLE `campaign_data` (
 INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 18:42:37,53');
 INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 18:46:29,53');
 INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 18:47:34,53');
+INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 20:22:44,49');
+INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 20:23:06,49');
+INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 20:26:12,49');
+INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 20:26:30,49');
+INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 20:27:31,49');
+INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 20:30:53,49');
+INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 20:31:14,49');
+INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 20:36:13,49');
+INSERT INTO `campaign_data` VALUES(1, 'twitter_hashtag_result_count', '2011-06-19 20:46:19,49');
 
 -- --------------------------------------------------------
 

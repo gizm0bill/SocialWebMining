@@ -18,5 +18,14 @@
 			"module"	 => "marketing",
 			"id" 		 => $this->campaign->id_campaign
 		) )?>">Start workers</a>
+		<br />
+		<a href="<?php echo $this->url( array
+		(
+			"controller" => "campaign",
+			"action"	 => "workers-stop",
+			"module"	 => "marketing",
+			"id" 		 => $this->campaign->id_campaign
+		) )?>">Stop workers</a>
 	</div>
+	<div class="clear"></div>
 </div>

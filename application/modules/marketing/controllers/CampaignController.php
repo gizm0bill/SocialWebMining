@@ -41,10 +41,21 @@ class Marketing_CampaignController extends Zend_Controller_Action
 
 		$form = new Zend_Form();
 		$form->setMethod( Zend_Form::METHOD_POST );
+		$form->setName( 'campaignedit' );
+		// add campaign values
+		$form->addElement( new Zend_Form_Element_Hidden( array
+		(
+			'name' 		 => Campaign::getCols()->id,
+			'required'   => true,
+			'filters'    => array( 'StringTrim' ),
+            'validators' => array( 'Alnum', 'NotEmpty' ),
+			'decorators' => array( 'ViewHelper' )
+		) ) );
 		$form->addElement( new Zend_Form_Element_Text( array
 		(
 			'name' 		 => Campaign::getCols()->title,
 			'label' 	 => 'Title',
+			'class'		 => 'large',
 			'required'   => true,
 			'filters'    => array( 'StringTrim' ),
             'validators' => array( 'Alnum', 'NotEmpty' )
@@ -65,12 +76,64 @@ class Marketing_CampaignController extends Zend_Controller_Action
 			'filters'    => array( 'StringTrim' ),
             'validators' => array( 'NotEmpty' )
 		) ) );
-		$form->addElement( new Zend_Form_Element_Submit( array( 'name' => 'submit-button', 'label' => 'Save' ) ) );
 		$form->setDefaults( $campaign );
+
+		// add attributes
+		foreach( $campaign['attrs'] as $k => $attr )
+		{
+			$valElem = new Zend_Form_Element_Text( array
+			(
+				'name'		 => CampaignAttributes::getCols()->val."[$k]",
+				'label'	 	 => 'Attribute value',
+				'class'		 => 'medium',
+				'filters'    => array( 'StringTrim' ),
+				'value'		 => $attr['val'],
+			) ) ;
+			$attrElem = new Zend_Form_Element_Select( array
+			(
+				'name' 		 => CampaignAttributes::getCols()->attr."[$k]",
+				'label'	 	 => 'Attribute name',
+				'class'		 => 'medium',
+				'multioptions' => Campaign::getAttributeList(),
+				'value'		 => $attr['attr']
+			) );
+
+			$form->addDisplayGroup( array( $attrElem, $valElem ), "attributes$k" );
+			$attrs = $form->getDisplayGroup( "attributes$k" );
+        	$attrs->setDecorators( array
+        	(
+                    'FormElements',
+                    'Fieldset',
+                    array( 'HtmlTag', array( 'tag'=>'div' ) )
+	        ));
+		}
+
+		if( count( $this->_request->getPost() ) && $form->isValid( $this->_request->getPost() ) )
+		{
+			$c = new Campaign();
+			$data = $this->_request->getPost();
+			$c->update( array
+			(
+				Campaign::getCols()->title 	=> $data[Campaign::getCols()->title],
+				Campaign::getCols()->from 	=> $data[Campaign::getCols()->from],
+				Campaign::getCols()->to 	=> $data[Campaign::getCols()->to],
+			), array( Campaign::getCols()->id => $this->_request->getPost( 'id_campaign' ) ) );
+		}
+
+		$form->addElement( new Zend_Form_Element_Submit( array
+		(
+			'name' 	=> 'submit-button',
+			'label' => 'Save settings',
+			'class' => 'clear',
+			'decorators' => array( 'ViewHelper' )
+		) ) );
+
 		$this->view->form = $form;
 
-		//$srv = new  Zend_Service_Twitter_Search('json');
-		//var_dump( $srv->search('zend',array( 'lang' => 'en' ) ) );
+		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/jquery.js' ));
+		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/jquery-ui.js' ));
+		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/app/marketing/campaign/edit.js' ));
+		$this->view->headLink( array( 'type' => 'text/css', 'rel' => 'stylesheet', 'href' => $this->view->baseUrl( '/styles/jquery-ui.css' ) ) );
 	}
 
 	private $_workerlist = array
@@ -112,12 +175,17 @@ class Marketing_CampaignController extends Zend_Controller_Action
 	{
 		$campaign = $this->_getFullCampaignByReqId();
 		$this->view->campaign = (object) $campaign;
-		$exec = "/usr/bin/php ".PUBLIC_PATH ."/index.php -m marketing -c cli -a %s -p 'id=".$campaign['id_campaign']."&%s' 2>&1 &";
+
+		// make cli request command
+		$exec = "(/usr/bin/php ".PUBLIC_PATH ."/index.php -m marketing -c cli -a %s -p 'id=".$campaign['id_campaign']."&%s' &) > /dev/null";
 
 		$attrs = $errors = $outputs = array();
+
+		// get all campaign attributes
 		foreach( $campaign['attrs'] as $attr )
 			$attrs[$attr['attr']] = $attr['val'];
 
+		// make worker requests based on registered _workerList
 		foreach( $this->_workerlist as $action => $title )
 		{
 			switch( $action )
@@ -127,14 +195,35 @@ class Marketing_CampaignController extends Zend_Controller_Action
 					break;
 			}
 
-			var_dump( passthru( exec( sprintf( $exec, $action, $args ), $r ) ) );
-			if( $r != 0 )
-			{
-				$errors[] = "Starting worker for '$action' failed";
-				$outputs[] = implode( "\n", $x );
-			}
+			exec( sprintf( $exec, $action, $args ), $x, $r );
+			$outputs[] = "Started worker for '$title'";
 		}
 		$this->view->errors = $errors;
+		$this->view->outputs = $outputs;
+	}
+
+	public function workersStopAction()
+	{
+		$campaign = $this->_getFullCampaignByReqId();
+		$this->view->campaign = (object) $campaign;
+
+		$outputs = array();
+		foreach( $this->_workerlist as $action => $title )
+		{
+			$fn = APPLICATION_PATH."/../data/workers/"
+				. $this->_request->getModuleName() . "-"
+				. $action . "-"
+				. $campaign['id_campaign'] . ".ini";
+
+			// get ini config, merge with stop status, and write
+			$cfg = new Zend_Config_Ini( $fn, null, true );
+			$cfg->merge( new Zend_Config( array( 'status' => 'stopped' ) ) );
+			$newCfg = new Zend_Config_Writer_Ini();
+			$newCfg->setConfig( $cfg );
+			$newCfg->write( $fn );
+
+			$outputs[] = "Stopped worker for '$title'";
+		}
 		$this->view->outputs = $outputs;
 	}
 }
