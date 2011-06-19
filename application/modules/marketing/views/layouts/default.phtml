@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" href="<?php echo $this->baseUrl('favicon.ico') ?>" />
+	<?php
+		echo $this->headTitle();
+		echo $this->headMeta();
+	    echo $this->headLink();
+	   	echo $this->headStyle();
+	   	echo $this->headScript();
+	?>
+</head>
+<body>
+<div id="body-wrapper">
+	<div id="main">
+		<div id="header">
+	    	<div id="logo">
+	    		<a href="<?=$this->baseUrl()?>/"></a>
+	    		<span class="beta">beta</span>
+	    	</div>
+	    	<div id="menu">
+    			<?php echo $this->navigation(); ?>
+    		</div>
+	        <div class="clear"></div>
+	    </div>
+	    <div id="content">
+	    	<?php echo $this->layout()->content?>
+	        <div class="clear"></div>
+	    </div>
+	    <div id="push-footer"></div>
+	</div>
+</div>
+<div id="footer">
+&nbsp;
+</div>
+</body>
+</html>
+
+
+
+
+

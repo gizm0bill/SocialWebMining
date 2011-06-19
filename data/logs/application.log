@@ -1,0 +1,1373 @@
+2011-06-17T23:35:50+03:00 NOTICE (5): Page not found
+2011-06-17T23:35:50+03:00 NOTICE (5): Request Parameters
+2011-06-17T23:37:19+03:00 NOTICE (5): Page not found
+2011-06-17T23:37:19+03:00 NOTICE (5): Request Parameters
+2011-06-17T23:37:23+03:00 NOTICE (5): Page not found
+2011-06-17T23:37:23+03:00 NOTICE (5): Request Parameters
+2011-06-17T23:37:28+03:00 NOTICE (5): Page not found
+2011-06-17T23:37:28+03:00 NOTICE (5): Request Parameters
+2011-06-17T23:39:28+03:00 NOTICE (5): Page not found
+2011-06-17T23:39:28+03:00 NOTICE (5): Request Parameters
+2011-06-17T23:40:01+03:00 NOTICE (5): Page not found
+2011-06-17T23:40:01+03:00 NOTICE (5): Request Parameters
+2011-06-17T23:40:49+03:00 NOTICE (5): Page not found
+2011-06-17T23:40:49+03:00 NOTICE (5): Request Parameters
+2011-06-17T23:40:51+03:00 CRIT (2): Application error
+2011-06-17T23:40:51+03:00 CRIT (2): Request Parameters
+2011-06-17T23:40:52+03:00 CRIT (2): Application error
+2011-06-17T23:40:52+03:00 CRIT (2): Request Parameters
+2011-06-17T23:41:22+03:00 CRIT (2): Application error
+2011-06-17T23:41:22+03:00 CRIT (2): Request Parameters
+2011-06-17T23:41:31+03:00 CRIT (2): Application error
+2011-06-17T23:41:31+03:00 CRIT (2): Request Parameters
+2011-06-17T23:49:51+03:00 CRIT (2): Application error
+2011-06-17T23:49:51+03:00 CRIT (2): Request Parameters
+2011-06-17T23:52:07+03:00 CRIT (2): Application error
+2011-06-17T23:52:07+03:00 CRIT (2): Request Parameters
+2011-06-17T23:52:31+03:00 CRIT (2): Application error
+2011-06-17T23:52:31+03:00 CRIT (2): Request Parameters
+2011-06-17T23:52:39+03:00 CRIT (2): Application error
+2011-06-17T23:52:39+03:00 CRIT (2): Request Parameters
+2011-06-18T00:09:31+03:00 CRIT (2): Application error
+2011-06-18T00:09:31+03:00 CRIT (2): Request Parameters
+2011-06-18T17:32:06+03:00 CRIT (2): Application error
+2011-06-18T17:32:06+03:00 CRIT (2): Request Parameters
+2011-06-18T17:33:02+03:00 CRIT (2): Application error
+2011-06-18T17:33:02+03:00 CRIT (2): Request Parameters
+2011-06-18T19:32:07+03:00 CRIT (2): Application error
+2011-06-18T19:32:07+03:00 CRIT (2): Request Parameters
+2011-06-18T19:33:50+03:00 CRIT (2): Application error
+2011-06-18T19:33:50+03:00 CRIT (2): Request Parameters
+2011-06-18T19:34:15+03:00 CRIT (2): Application error
+2011-06-18T19:34:15+03:00 CRIT (2): Request Parameters
+2011-06-18T19:35:35+03:00 CRIT (2): Application error
+2011-06-18T19:35:35+03:00 CRIT (2): Request Parameters
+2011-06-18T19:36:34+03:00 CRIT (2): Application error
+2011-06-18T19:36:34+03:00 CRIT (2): Request Parameters
+2011-06-18T19:36:37+03:00 CRIT (2): Application error
+2011-06-18T19:36:37+03:00 CRIT (2): Request Parameters
+2011-06-18T19:40:42+03:00 CRIT (2): Application error+muie
+2011-06-18T19:40:42+03:00 CRIT (2): Request Parameters
+2011-06-18T19:44:45+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', 'cli')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T19:44:45+03:00: Request Parameters -- %info%2011-06-18T19:46:41+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', 'cli')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T19:46:41+03:00: Request Parameters -- %info%2011-06-18T19:48:11+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', 'cli')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T19:48:11+03:00: Request Parameters -- %info%2011-06-18T19:51:32+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', 'cli')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T19:51:32+03:00: Request Parameters -- %info%2011-06-18T19:57:06+03:00: Application error -- exception 'Zend_Console_Getopt_Exception' with message 'Option "c" is not recognized.' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Console/Getopt.php:785
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Console/Getopt.php(751): Zend_Console_Getopt->_parseSingleOption('c', Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Console/Getopt.php(716): Zend_Console_Getopt->_parseLongOption(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Console/Getopt.php(580): Zend_Console_Getopt->parse()
+#3 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Router/Cli.php(14): Zend_Console_Getopt->getRemainingArgs()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(911): Ext\Controller\Router\Cli->route(Object(Zend_Controller_Request_Simple))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#8 {main}2011-06-18T19:57:06+03:00: Request Parameters -- %info%2011-06-18T20:00:53+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', NULL)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T20:00:53+03:00: Request Parameters -- %info%2011-06-18T20:05:05+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', NULL)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T20:05:05+03:00: Request Parameters -- %info%2011-06-18T20:21:11+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', NULL)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T20:21:11+03:00: Request Parameters -- %info%2011-06-18T20:21:21+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', NULL)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T20:21:21+03:00: Request Parameters -- %info%2011-06-18T20:24:45+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', NULL)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T20:24:45+03:00: Request Parameters -- %info%2011-06-18T23:44:40+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', NULL)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T23:44:40+03:00: Request Parameters -- %info%2011-06-18T23:50:26+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource 'marketing:index' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('marketing:index')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(42): Zend_Acl->isAllowed('guest', 'marketing:index', 'index')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T23:50:26+03:00: Request Parameters -- %info%2011-06-18T23:56:53+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', 'index')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T23:56:53+03:00: Request Parameters -- %info%2011-06-18T23:58:17+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(36): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#6 {main}2011-06-18T23:58:17+03:00: Request Parameters -- %info%2011-06-18T23:58:31+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(36): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Simple))
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Simple))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#6 {main}2011-06-18T23:58:31+03:00: Request Parameters -- %info%2011-06-18T23:59:25+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('guest', '', 'index')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-18T23:59:25+03:00: Request Parameters -- %info%2011-06-18T23:59:45+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(36): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#6 {main}2011-06-18T23:59:45+03:00: Request Parameters -- %info%2011-06-19T00:01:14+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(36): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#6 {main}2011-06-19T00:01:14+03:00: Request Parameters -- %info%2011-06-19T00:01:36+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(36): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#6 {main}2011-06-19T00:01:36+03:00: Request Parameters -- %info%2011-06-19T00:02:05+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource '' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(36): Zend_Acl->get('')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#6 {main}2011-06-19T00:02:05+03:00: Request Parameters -- %info%2011-06-19T00:10:38+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource 'marketing:index' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('marketing:index')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(42): Zend_Acl->isAllowed('guest', 'marketing:index', 'index')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T00:10:38+03:00: Request Parameters -- %info%2011-06-19T00:11:00+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource 'marketing:index' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('marketing:index')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(42): Zend_Acl->isAllowed('guest', 'marketing:index', 'index')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T00:11:00+03:00: Request Parameters -- %info%2011-06-19T00:21:14+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource 'marketing:index' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('marketing:index')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(42): Zend_Acl->isAllowed('guest', 'marketing:index', 'index')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T00:21:14+03:00: Request Parameters -- %info%2011-06-19T00:21:35+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource 'marketing:index' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('marketing:index')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(42): Zend_Acl->isAllowed('guest', 'marketing:index', 'index')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T00:21:35+03:00: Request Parameters -- %info%2011-06-19T00:42:53+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'test' ) LIMIT 1' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1389): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/models/User.php(42): Zend_Db_Table_Abstract->fetchRow(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/default/controllers/UsersController.php(40): App\Model\User->login('test', 'test')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): UsersController->loginAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('loginAction')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'test' ) LIMIT 1' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1389): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/models/User.php(42): Zend_Db_Table_Abstract->fetchRow(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/default/controllers/UsersController.php(40): App\Model\User->login('test', 'test')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): UsersController->loginAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('loginAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T00:42:53+03:00: Request Parameters -- %info%2011-06-19T00:45:29+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:45:29+03:00: Request Parameters -- %info%2011-06-19T00:46:05+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:46:05+03:00: Request Parameters -- %info%2011-06-19T00:46:06+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:46:06+03:00: Request Parameters -- %info%2011-06-19T00:46:22+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:46:22+03:00: Request Parameters -- %info%2011-06-19T00:46:42+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:46:42+03:00: Request Parameters -- %info%2011-06-19T00:47:33+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(16): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:47:33+03:00: Request Parameters -- %info%2011-06-19T00:47:51+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:47:51+03:00: Request Parameters -- %info%2011-06-19T00:47:52+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:47:52+03:00: Request Parameters -- %info%2011-06-19T00:47:52+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:47:52+03:00: Request Parameters -- %info%2011-06-19T00:47:53+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(17): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->indexAction()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#11 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#12 {main}2011-06-19T00:47:53+03:00: Request Parameters -- %info%2011-06-19T00:49:49+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource 'images' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('images')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('agent', 'images', 'edit-icon.png')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T00:49:49+03:00: Request Parameters -- %info%2011-06-19T00:55:21+03:00: Page not found -- exception 'Zend_Controller_Action_Exception' with message 'Action "index" does not exist and was not trapped in __call()' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(515): Zend_Controller_Action->__call('indexAction', Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#6 {main}2011-06-19T00:55:21+03:00: Request Parameters -- %info%2011-06-19T00:55:25+03:00: Page not found -- exception 'Zend_Controller_Action_Exception' with message 'Action "index" does not exist and was not trapped in __call()' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(515): Zend_Controller_Action->__call('indexAction', Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('indexAction')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#6 {main}2011-06-19T00:55:25+03:00: Request Parameters -- %info%2011-06-19T01:07:15+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/models/Campaign.php(31): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select), NULL, NULL, NULL)
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(28): App\Model\Campaign->fetchAllWithAttributes(Object(Zend_Db_Table_Select))
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(73): Marketing_CampaignController->_getCampaignByReqId()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->runWorkersAction()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('runWorkersActio...')
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#13 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#14 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#15 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '1' )' at line 1' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/application/models/Campaign.php(31): Zend_Db_Table_Abstract->fetchAll(Object(Zend_Db_Table_Select), NULL, NULL, NULL)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(28): App\Model\Campaign->fetchAllWithAttributes(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(73): Marketing_CampaignController->_getCampaignByReqId()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->runWorkersAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('runWorkersActio...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}2011-06-19T01:07:15+03:00: Request Parameters -- %info%2011-06-19T01:07:34+03:00: Application error -- exception 'Zend_View_Exception' with message 'script 'campaign/run-workers.phtml' not found in path (/Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/:./views/scripts/)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php:988
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('campaign/run-wo...')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('campaign/run-wo...')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('campaign/run-wo...', NULL)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('runWorkersActio...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#11 {main}2011-06-19T01:07:34+03:00: Request Parameters -- %info%2011-06-19T01:09:09+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:09:09+03:00: Request Parameters -- %info%2011-06-19T01:12:54+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:12:54+03:00: Request Parameters -- %info%2011-06-19T01:12:56+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:12:56+03:00: Request Parameters -- %info%2011-06-19T01:13:02+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:13:02+03:00: Request Parameters -- %info%2011-06-19T01:13:03+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:13:03+03:00: Request Parameters -- %info%2011-06-19T01:13:04+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource 'images' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('images')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('agent', 'images', 'edit-icon.png')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T01:13:04+03:00: Request Parameters -- %info%2011-06-19T01:13:05+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource 'images' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('images')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('agent', 'images', 'edit-icon.png')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T01:13:05+03:00: Request Parameters -- %info%2011-06-19T01:13:06+03:00: Application error -- exception 'Zend_Acl_Exception' with message 'Resource 'images' not found' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php:365
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Acl.php(846): Zend_Acl->get('images')
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Controller/Plugin/Auth.php(41): Zend_Acl->isAllowed('agent', 'images', 'edit-icon.png')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Plugin/Broker.php(260): Ext\Controller\Plugin\Auth->routeShutdown(Object(Zend_Controller_Request_Http))
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(923): Zend_Controller_Plugin_Broker->routeShutdown(Object(Zend_Controller_Request_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T01:13:06+03:00: Request Parameters -- %info%2011-06-19T01:13:07+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:13:07+03:00: Request Parameters -- %info%2011-06-19T01:13:10+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:13:10+03:00: Request Parameters -- %info%2011-06-19T01:13:11+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:13:11+03:00: Request Parameters -- %info%2011-06-19T01:13:12+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:13:12+03:00: Request Parameters -- %info%2011-06-19T01:13:12+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:13:12+03:00: Request Parameters -- %info%2011-06-19T01:13:12+03:00: Application error -- exception 'Zend_Form_Exception' with message 'Invalid name provided; must contain only valid variable characters and be non-empty' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php:485
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(363): Zend_Form_Element->setName(NULL)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Form/Element.php(247): Zend_Form_Element->setOptions(Array)
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(46): Zend_Form_Element->__construct(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->editAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T01:13:12+03:00: Request Parameters -- %info%2011-06-19T10:11:50+03:00: Application error -- exception 'Zend_Config_Exception' with message 'Filename is not set' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php:108
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(21): Zend_Config_Ini->__construct(false)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T10:11:50+03:00: Request Parameters -- %info%2011-06-19T10:30:23+03:00: Application error -- exception 'Zend_Config_Exception' with message 'Filename is not set' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php:108
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(21): Zend_Config_Ini->__construct(false)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T10:30:23+03:00: Request Parameters -- %info%2011-06-19T10:56:30+03:00: Application error -- exception 'Zend_Config_Exception' with message 'Filename is not set' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php:108
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(21): Zend_Config_Ini->__construct(false)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T10:56:30+03:00: Request Parameters -- %info%2011-06-19T10:56:34+03:00: Application error -- exception 'Zend_Config_Exception' with message 'Filename is not set' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php:108
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(21): Zend_Config_Ini->__construct(false)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#7 {main}2011-06-19T10:56:34+03:00: Request Parameters -- %info%2011-06-19T10:57:28+03:00: Application error -- exception 'Zend_Config_Exception' with message 'parse_ini_file(/Users/mihaibalaceanu/Sites/SocialWebMining/application/../data/workers/marketing-campaigntw-): failed to open stream: No such file or directory' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('/Users/mihaibal...')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('/Users/mihaibal...')
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(21): Zend_Config_Ini->__construct('/Users/mihaibal...')
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T10:57:28+03:00: Request Parameters -- %info%2011-06-19T10:57:34+03:00: Application error -- exception 'Zend_Config_Exception' with message 'parse_ini_file(/Users/mihaibalaceanu/Sites/SocialWebMining/application/../data/workers/marketing-campaigntw-): failed to open stream: No such file or directory' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('/Users/mihaibal...')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('/Users/mihaibal...')
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(21): Zend_Config_Ini->__construct('/Users/mihaibal...')
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T10:57:34+03:00: Request Parameters -- %info%2011-06-19T11:00:14+03:00: Application error -- exception 'Zend_Config_Exception' with message 'parse_ini_file(/Users/mihaibalaceanu/Sites/SocialWebMining/application/../data/workers/marketing-campaigntw-1): failed to open stream: No such file or directory' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('/Users/mihaibal...')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('/Users/mihaibal...')
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(28): Zend_Config_Ini->__construct('/Users/mihaibal...')
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T11:00:14+03:00: Request Parameters -- %info%2011-06-19T11:01:11+03:00: Application error -- exception 'Zend_Config_Exception' with message 'parse_ini_file(/Users/mihaibalaceanu/Sites/SocialWebMining/application/../data/workers/marketing-campaigntw-1.ini): failed to open stream: No such file or directory' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php:182
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php(202): Zend_Config_Ini->_parseIniFile('/Users/mihaibal...')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Config/Ini.php(126): Zend_Config_Ini->_loadIniFile('/Users/mihaibal...')
+#2 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(28): Zend_Config_Ini->__construct('/Users/mihaibal...')
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#9 {main}2011-06-19T11:01:11+03:00: Request Parameters -- %info%2011-06-19T11:39:00+03:00: Application error -- exception 'Zend_View_Exception' with message 'script 'cli/campaigntw.phtml' not found in path (/Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/:./views/scripts/)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php:988
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('cli/campaigntw....')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('cli/campaigntw....')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('cli/campaigntw....', NULL)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#11 {main}2011-06-19T11:39:00+03:00: Request Parameters -- %info%2011-06-19T11:39:05+03:00: Application error -- exception 'Zend_View_Exception' with message 'script 'cli/campaigntw.phtml' not found in path (/Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/:./views/scripts/)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php:988
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('cli/campaigntw....')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('cli/campaigntw....')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('cli/campaigntw....', NULL)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#11 {main}2011-06-19T11:39:05+03:00: Request Parameters -- %info%2011-06-19T11:39:45+03:00: Application error -- exception 'Zend_View_Exception' with message 'script 'cli/campaigntw.phtml' not found in path (/Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/:./views/scripts/)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php:988
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('cli/campaigntw....')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('cli/campaigntw....')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('cli/campaigntw....', NULL)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#11 {main}2011-06-19T11:39:45+03:00: Request Parameters -- %info%2011-06-19T11:39:45+03:00: Application error -- exception 'Zend_View_Exception' with message 'script 'cli/campaigntw.phtml' not found in path (/Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/:./views/scripts/)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php:988
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('cli/campaigntw....')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('cli/campaigntw....')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('cli/campaigntw....', NULL)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#11 {main}2011-06-19T11:39:45+03:00: Request Parameters -- %info%2011-06-19T12:08:30+03:00: Application error -- exception 'Zend_View_Exception' with message 'script 'cli/campaigntw.phtml' not found in path (/Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/:./views/scripts/)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php:988
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('cli/campaigntw....')
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('cli/campaigntw....')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('cli/campaigntw....', NULL)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#11 {main}2011-06-19T12:08:30+03:00: Request Parameters -- %info%2011-06-19T12:33:53+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`socialmining`.`campaign_attr`, CONSTRAINT `campaign_attr_ibfk_1` FOREIGN KEY (`id_campaign`) REFERENCES `campaign` (`id_campaign`) ON DELETE CASCADE ON UPDATE CASCADE)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(26): Zend_Db_Table_Abstract->insert(Array)
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`socialmining`.`campaign_attr`, CONSTRAINT `campaign_attr_ibfk_1` FOREIGN KEY (`id_campaign`) REFERENCES `campaign` (`id_campaign`) ON DELETE CASCADE ON UPDATE CASCADE)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(26): Zend_Db_Table_Abstract->insert(Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T12:33:53+03:00: Request Parameters -- %info%2011-06-19T12:34:00+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`socialmining`.`campaign_attr`, CONSTRAINT `campaign_attr_ibfk_1` FOREIGN KEY (`id_campaign`) REFERENCES `campaign` (`id_campaign`) ON DELETE CASCADE ON UPDATE CASCADE)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(26): Zend_Db_Table_Abstract->insert(Array)
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`socialmining`.`campaign_attr`, CONSTRAINT `campaign_attr_ibfk_1` FOREIGN KEY (`id_campaign`) REFERENCES `campaign` (`id_campaign`) ON DELETE CASCADE ON UPDATE CASCADE)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(26): Zend_Db_Table_Abstract->insert(Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T12:34:00+03:00: Request Parameters -- %info%2011-06-19T12:35:50+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(27): Zend_Db_Table_Abstract->insert(Array)
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(27): Zend_Db_Table_Abstract->insert(Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T12:35:50+03:00: Request Parameters -- %info%2011-06-19T12:35:56+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(27): Zend_Db_Table_Abstract->insert(Array)
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(27): Zend_Db_Table_Abstract->insert(Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T12:35:56+03:00: Request Parameters -- %info%2011-06-19T12:39:48+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(27): Zend_Db_Table_Abstract->insert(Array)
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `ca...', Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(574): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `ca...', Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1073): Zend_Db_Adapter_Abstract->insert('campaign_attr', Array)
+#5 /Users/mihaibalaceanu/Sites/SocialWebMining/library/Ext/Service/Campaign/Agent/Twitter.php(27): Zend_Db_Table_Abstract->insert(Array)
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CliController.php(42): Ext\Service\Campaign\Agent\Twitter->searchHashtag('1', 'zend')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CliController->campaigntwAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('campaigntwActio...')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T12:39:48+03:00: Request Parameters -- %info%2011-06-19T15:59:23+03:00: Page not found -- exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (campaign)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Helper/Action.php(135): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 [internal function]: Zend_View_Helper_Action->action('workers-status', 'campaign')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#3 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View_Abstract->__call('action', Array)
+#4 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View->action('workers-status', 'campaign')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/View.php(108): include('/Users/mihaibal...')
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(888): Zend_View->_run('/Users/mihaibal...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('campaign/edit.p...')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('campaign/edit.p...', NULL)
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#13 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#14 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#15 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#16 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#17 {main}2011-06-19T15:59:23+03:00: Request Parameters -- %info%2011-06-19T15:59:32+03:00: Page not found -- exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (campaign)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Helper/Action.php(135): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 [internal function]: Zend_View_Helper_Action->action('workers-status', 'campaign')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#3 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View_Abstract->__call('action', Array)
+#4 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View->action('workers-status', 'campaign')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/View.php(108): include('/Users/mihaibal...')
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(888): Zend_View->_run('/Users/mihaibal...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('campaign/edit.p...')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('campaign/edit.p...', NULL)
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#13 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#14 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#15 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#16 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#17 {main}2011-06-19T15:59:32+03:00: Request Parameters -- %info%2011-06-19T15:59:33+03:00: Page not found -- exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (campaign)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Helper/Action.php(135): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 [internal function]: Zend_View_Helper_Action->action('workers-status', 'campaign')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#3 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View_Abstract->__call('action', Array)
+#4 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View->action('workers-status', 'campaign')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/View.php(108): include('/Users/mihaibal...')
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(888): Zend_View->_run('/Users/mihaibal...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('campaign/edit.p...')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('campaign/edit.p...', NULL)
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#13 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#14 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#15 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#16 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#17 {main}2011-06-19T15:59:33+03:00: Request Parameters -- %info%2011-06-19T15:59:33+03:00: Page not found -- exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (campaign)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Helper/Action.php(135): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 [internal function]: Zend_View_Helper_Action->action('workers-status', 'campaign')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#3 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View_Abstract->__call('action', Array)
+#4 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View->action('workers-status', 'campaign')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/View.php(108): include('/Users/mihaibal...')
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(888): Zend_View->_run('/Users/mihaibal...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('campaign/edit.p...')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('campaign/edit.p...', NULL)
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#13 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#14 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#15 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#16 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#17 {main}2011-06-19T15:59:33+03:00: Request Parameters -- %info%2011-06-19T15:59:33+03:00: Page not found -- exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (campaign)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Helper/Action.php(135): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 [internal function]: Zend_View_Helper_Action->action('workers-status', 'campaign')
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#3 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View_Abstract->__call('action', Array)
+#4 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/views/scripts/campaign/edit.phtml(12): Zend_View->action('workers-status', 'campaign')
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/View.php(108): include('/Users/mihaibal...')
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/View/Abstract.php(888): Zend_View->_run('/Users/mihaibal...')
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(897): Zend_View_Abstract->render('campaign/edit.p...')
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(918): Zend_Controller_Action_Helper_ViewRenderer->renderScript('campaign/edit.p...', NULL)
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/Helper/ViewRenderer.php(957): Zend_Controller_Action_Helper_ViewRenderer->render()
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(523): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('editAction')
+#13 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#14 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#15 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#16 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#17 {main}2011-06-19T15:59:33+03:00: Request Parameters -- %info%2011-06-19T16:01:06+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1307): Zend_Db_Table_Abstract->fetchAll('((`campaign`.`i...')
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(88): Zend_Db_Table_Abstract->find(Object(Zend_Db_Table_Select))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->workersStatusAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('workersStatusAc...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1307): Zend_Db_Table_Abstract->fetchAll('((`campaign`.`i...')
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(88): Zend_Db_Table_Abstract->find(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->workersStatusAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('workersStatusAc...')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T16:01:06+03:00: Request Parameters -- %info%2011-06-19T16:01:30+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1307): Zend_Db_Table_Abstract->fetchAll('((`campaign`.`i...')
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(89): Zend_Db_Table_Abstract->find(Object(Zend_Db_Table_Select))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->workersStatusAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('workersStatusAc...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1307): Zend_Db_Table_Abstract->fetchAll('((`campaign`.`i...')
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(89): Zend_Db_Table_Abstract->find(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->workersStatusAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('workersStatusAc...')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T16:01:30+03:00: Request Parameters -- %info%2011-06-19T16:01:40+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1307): Zend_Db_Table_Abstract->fetchAll('((`campaign`.`i...')
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(88): Zend_Db_Table_Abstract->find(Object(Zend_Db_Table_Select))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->workersStatusAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('workersStatusAc...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1307): Zend_Db_Table_Abstract->fetchAll('((`campaign`.`i...')
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(88): Zend_Db_Table_Abstract->find(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->workersStatusAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('workersStatusAc...')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T16:01:40+03:00: Request Parameters -- %info%2011-06-19T16:02:13+03:00: Application error -- exception 'PDOException' with message 'SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1307): Zend_Db_Table_Abstract->fetchAll('((`campaign`.`i...')
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(88): Zend_Db_Table_Abstract->find(Object(Zend_Db_Table_Select))
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->workersStatusAction()
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('workersStatusAc...')
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#12 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#13 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#14 {main}
+
+Next exception 'Zend_Db_Statement_Exception' with message 'SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement/Pdo.php:234
+Stack trace:
+#0 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Statement.php(300): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Table_Select), Array)
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1527): Zend_Db_Adapter_Pdo_Abstract->query(Object(Zend_Db_Table_Select))
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1342): Zend_Db_Table_Abstract->_fetch(Object(Zend_Db_Table_Select))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Db/Table/Abstract.php(1307): Zend_Db_Table_Abstract->fetchAll('((`campaign`.`i...')
+#6 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(88): Zend_Db_Table_Abstract->find(Object(Zend_Db_Table_Select))
+#7 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->workersStatusAction()
+#8 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('workersStatusAc...')
+#9 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#10 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#11 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#12 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#13 {main}2011-06-19T16:02:13+03:00: Request Parameters -- %info%2011-06-19T17:12:02+03:00: Application error -- exception 'Zend_Controller_Action_Exception' with message 'Method "_getCampaignByReqId" does not exist and was not trapped in __call()' in /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php:488
+Stack trace:
+#0 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(113): Zend_Controller_Action->__call('_getCampaignByR...', Array)
+#1 /Users/mihaibalaceanu/Sites/SocialWebMining/application/modules/marketing/controllers/CampaignController.php(113): Marketing_CampaignController->_getCampaignByReqId()
+#2 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Action.php(513): Marketing_CampaignController->workersStartAction()
+#3 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('workersStartAct...')
+#4 /Users/mihaibalaceanu/Library/ZF/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#5 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#6 /Users/mihaibalaceanu/Library/ZF/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#7 /Users/mihaibalaceanu/Sites/SocialWebMining/public/index.php(31): Zend_Application->run()
+#8 {main}2011-06-19T17:12:02+03:00: Request Parameters -- %info%

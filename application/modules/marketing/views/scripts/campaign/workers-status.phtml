@@ -1,0 +1,6 @@
+<h2>Worker status for campaign: <?php echo $this->campaign->title ?></h2>
+<ul>
+<?php foreach( $this->statuses as $title => $status ) : ?>
+	<li><?php echo $title ?>: <?php echo $status ?></li>
+<?php endforeach; ?>
+</ul>

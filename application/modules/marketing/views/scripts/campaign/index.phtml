@@ -1,0 +1,50 @@
+<div class="section">
+	<a name="top"></a>
+	<div class="title">
+		<h1 class="info">
+			Your campaigns
+		</h1>
+	</div>
+	<div class="left">
+		<div class="list">
+			<div class="header">
+				<div>
+					Title
+					<!-- span class="sort">
+						&uarr;
+					</span -->
+				</div>
+				<div>
+					From
+				</div>
+				<div>
+					To
+				</div>
+				<div></div>
+			</div>
+			<div class="body">
+				<?php foreach( $this->campaigns as $c ) : ?>
+				<div class="item">
+					<div>
+						<?=$c->title?>
+					</div>
+					<div>
+						<?=$c->from?>
+					</div>
+					<div>
+						<?=$c->to?>
+					</div>
+					<div class="ctrls">
+						<a class="edit" href="<?=$this->url( array( 'controller' => 'campaign', 'action' => 'edit', 'module' => 'marketing', 'id' => $c->id_campaign ), 'default' )?>">
+							Edit
+						</a>
+					</div>
+				</div>
+				<?php endforeach; ?>
+			</div>
+			<div class="footer">
+				<div></div><div></div><div></div><div></div>
+			</div>
+		</div>
+	</div>
+</div>

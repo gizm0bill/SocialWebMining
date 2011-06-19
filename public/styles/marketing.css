@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+#body-wrapper
+{
+	background: -moz-linear-gradient(center bottom , #f0f0ff 30px, #f6f6ff 40px, #fbfbff 60px) repeat scroll 0 0 transparent;
+}
