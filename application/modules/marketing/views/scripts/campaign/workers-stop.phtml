@@ -1,0 +1,15 @@
+<div class="section">
+	<a name="top"></a>
+	<div class="title">
+		<h1 class="info">
+			Stopping campaign '<?php echo $this->campaign->title ?>' workers
+		</h1>
+	</div>
+	<div class="left">
+		<ul>
+		<?php foreach( $this->outputs as $out ) : ?>
+			<li><pre><?php echo $out ?></pre></li>
+		<?php endforeach; ?>
+		</ul>
+	</div>
+</div>

@@ -30,7 +30,7 @@ class Marketing_CliController extends Zend_Controller_Action
 			$data = "status = ".self::STATUS_RUNNING;
 			file_put_contents( $fn, $data );
 		}
-
+		echo "started, put '$data' into $fn'";
 		$twSrv = new Ext\Service\Campaign\Agent\Twitter();
 
 		while( true ) // run worker

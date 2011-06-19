@@ -25,10 +25,16 @@ class Campaign extends DbTable
 		'to'	=> 'to'
 	);
 
-	protected $_attrs = array
+	protected static $_attrs = array
 	(
-		'twitter_hashtag'
+		'twitter_hashtag' => 'Twitter hashtag',
+		'twitter_replyto' => 'Twitter in reply to'
 	);
+
+	public static function getAttributeList()
+	{
+		return self::$_attrs;
+	}
 
 	public function fetchAllWithAttributes( $where = null, $order = null, $count = null, $offset = null )
 	{
@@ -43,7 +49,7 @@ class Campaign extends DbTable
 			{
 				$attrTable = $attr->getTable();
 				$cols = $attrTable::getCols();
-				if( !in_array( $attr->{$cols->attr}, $this->_attrs ) )
+				if( !in_array( $attr->{$cols->attr}, array_keys( self::$_attrs ) ) )
 				{
 					// cleanup invalid attribute
 					$attr->delete();

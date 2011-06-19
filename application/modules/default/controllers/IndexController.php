@@ -10,6 +10,16 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
+    			$firstInterest = new Zend_Form_Element_Select(
+'firstInterest',
+array(
+'required' => 'true',
+'value' => 'a',
+'multiOptions' => array( 'z' => 'z', 'x' => 'x', 'a' => 'a' )));
+	$firstInterest->setValue('a');
+			echo $firstInterest;
+
+
     }
 
 
