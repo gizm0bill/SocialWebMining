@@ -87,7 +87,7 @@ class CampaignAttributes extends DbTable
 {
 	protected $_name = 'campaign_attr';
 
-	protected $_primary = array( 'id_campaign', 'attr' );
+	protected $_primary = array( 'id_campaign', 'attr', 'val' );
 
 	protected static $_mappedCols = array
 	(

@@ -14,13 +14,15 @@
 						&uarr;
 					</span -->
 				</div>
-				<div>
+				<div style="width:115px">
 					From
 				</div>
-				<div>
+				<div style="width:115px">
 					To
 				</div>
-				<div></div>
+				<div style="width:60px">
+					Actions
+				</div>
 			</div>
 			<div class="body">
 				<?php foreach( $this->campaigns as $c ) : ?>
@@ -43,7 +45,12 @@
 				<?php endforeach; ?>
 			</div>
 			<div class="footer">
-				<div></div><div></div><div></div><div></div>
+				<div class="ar">
+					<a class="edit" href="<?=$this->url( array( 'controller' => 'campaign', 'action' => 'add', 'module' => 'marketing' ), 'default' )?>">
+						+ Add Campaign
+					</a>
+				</div>
+				<div></div><div></div><div></div>
 			</div>
 		</div>
 	</div>

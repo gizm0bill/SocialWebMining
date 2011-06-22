@@ -30,17 +30,32 @@ class Marketing_CliController extends Zend_Controller_Action
 			$data = "status = ".self::STATUS_RUNNING;
 			file_put_contents( $fn, $data );
 		}
+
+		// TODO put in logs or something cause now it's all going to /dev/null :(
 		echo "started, put '$data' into $fn'";
 		$twSrv = new Ext\Service\Campaign\Agent\Twitter();
+		$c = new Campaign;
+		$campaign = current( $c->fetchAllWithAttributes
+		(
+			$c->select()->where( Campaign::getCols()->id . " = ? ", $campaignId )
+		) );
+
 
 		while( true ) // run worker
 		{
-			$cfg = new Zend_Config_Ini(  $fn );
+			$cfg = new Zend_Config_Ini( $fn );
 			if( $cfg->status != self::STATUS_RUNNING )
 				return false;
 
-			if( ( $hashtag = $this->_request->getParam( 'hashtag' ) ) )
-				var_dump( $twSrv->searchHashtag( $campaignId, $hashtag ) );
+			foreach( $campaign['attrs'] as $attr )
+			{
+				switch( $attr['attr'] )
+				{
+					case 'twitter_hashtag' :
+						$twSrv->searchHashtag( $campaignId, 'twitter_hashtag' );
+						break;
+				}
+			}
 
 			ob_flush();
 			sleep( 3600 ); // sleep one hour
