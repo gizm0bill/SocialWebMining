@@ -10,20 +10,6 @@ use App\Model\CampaignData,
 
 class Twitter extends TwitterAgent
 {
-	public function hashtagx( $campaignId, $hashtag, $sinceId=null, $lang='en', $rpp=100, $geocode=null, $page=null )
-	{
-		$srv = new  Zend_Service_Twitter_Search('json');
-		$res = $srv->search( '#'.$hashtag, array
-		(
-			'lang' 		=> $lang,
-			//'since_id' 	=> $sinceId,
-			'rpp' 		=> $rpp,
-			//'geocode' 	=> $geocode,
-			//'page'		=> $page
-		) );
-		return $res['max_id_str'];
-	}
-
 	public function hashtag( $idCampaign, $hashtag )
 	{
 		$cd = new CampaignData;
@@ -49,8 +35,7 @@ class Twitter extends TwitterAgent
 		$srv = new  Zend_Service_Twitter_Search('json');
 		$data = (object) $srv->search( '#'.$hashtag, array
 		(
-			'since_id' 	=> $lastId,
-			'rpp' 		=> 100
+			'since_id' 	=> $lastId
 		));
 
 		// send it to the stater

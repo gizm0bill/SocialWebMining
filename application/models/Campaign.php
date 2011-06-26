@@ -145,6 +145,7 @@ class CampaignData extends DbTable
 	(
 		'twitter_hashtag' 				=> '%s,%d',
 		'twitter_related_hashtag' 		=> '%s,%s,%d',
+		'twitter_related_hashtag_percent' => '%s,%s,%f',
 		'twitter_agent_hashtag_lastid' 	=> '%s,%s'
 	);
 

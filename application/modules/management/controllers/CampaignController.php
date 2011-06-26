@@ -38,9 +38,10 @@ class Management_CampaignController extends Zend_Controller_Action
 	 * @todo add to form class
 	 * @param string $name form name
 	 * @param array $campaign arry with campaign data from model
+	 * @param bool $isAdd for addAction remove attributes cause they are too much worries
 	 * @return Zend_Form
 	 */
-	private function _makeCampaignForm( $campaign = null, $name = 'campaignedit' )
+	private function _makeCampaignForm( $campaign = null, $name = 'campaignedit', $isAdd=false )
 	{
 		$form = new Zend_Form();
 		$form->setMethod( Zend_Form::METHOD_POST );
@@ -86,7 +87,8 @@ class Management_CampaignController extends Zend_Controller_Action
 			) ) );
 			$form->setDefaults( $campaign );
 		}
-		if( empty( $campaign['attrs'] ) ) // set some default null array for one attribute entry
+		$campaign['attrs'] = array();
+		if( empty( $campaign['attrs'] ) && !$isAdd ) // set some default null array for one attribute entry
 			$campaign['attrs'] = array( array( 'val' => null, 'attr' => null ) );
 
 		foreach( $campaign['attrs'] as $k => $attr ) // add attributes
@@ -121,20 +123,21 @@ class Management_CampaignController extends Zend_Controller_Action
                     array( 'HtmlTag', array( 'tag'=>'dl' ) )
 	        ));
 		}
-		$form->addElement( new Zend_Form_Element_Button( array
-		(
-			"name" => "add-attribute",
-			"label" => "Add attribute",
-			"class" => "add-attribute",
-			'decorators' => array( 'ViewHelper', array( 'HtmlTag', array( 'tag'=> 'dl', 'class' => 'clear' ) ) )
-		)));
+		if( !$isAdd )
+			$form->addElement( new Zend_Form_Element_Button( array
+			(
+				"name" => "add-attribute",
+				"label" => "Add attribute",
+				"class" => "add-attribute",
+				'decorators' => array( 'ViewHelper', array( 'HtmlTag', array( 'tag'=> 'dl', 'class' => 'clear' ) ) )
+			)));
 
 		return $form;
 	}
 
 	public function addAction()
 	{
-		$form = $this->_makeCampaignForm();
+		$form = $this->_makeCampaignForm( null, 'campaignadd', true );
 		if( count( $this->_request->getPost() ) && $form->isValid( $this->_request->getPost() ) )
 		{
 			$c = new Campaign();
@@ -147,9 +150,9 @@ class Management_CampaignController extends Zend_Controller_Action
 				Campaign::getCols()->idUser	=> Zend_Auth::getInstance()->getIdentity()->id
 			) );
 			$this->_helper->flashMessenger( 'Campaign succefully added!' );
-			$this->_helper->redirector( 'edit', 'campaign', 'marketing', array( 'id' => $iid ) );
+			$this->_helper->redirector( 'edit', 'campaign', 'management', array( 'id' => $iid ) );
 		}
-		var_dump( $form->getDisplayGroup('attributes0') );
+
 		$form->addElement( new Zend_Form_Element_Submit( array
 		(
 			'name' 	=> 'submit-button',
@@ -162,7 +165,7 @@ class Management_CampaignController extends Zend_Controller_Action
 
 		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/jquery.js' ));
 		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/jquery-ui.js' ));
-		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/app/marketing/campaign/add.js' ));
+		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/app/management/campaign/add.js' ));
 		$this->view->headLink( array( 'type' => 'text/css', 'rel' => 'stylesheet', 'href' => $this->view->baseUrl( '/styles/jquery-ui.css' ) ) );
 
 	}
@@ -242,7 +245,7 @@ class Management_CampaignController extends Zend_Controller_Action
 
 		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/jquery.js' ));
 		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/jquery-ui.js' ));
-		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/app/marketing/campaign/edit.js' ));
+		$this->view->headScript()->appendFile($this->view->baseUrl( '/scripts/app/management/campaign/edit.js' ));
 		$this->view->headLink( array( 'type' => 'text/css', 'rel' => 'stylesheet', 'href' => $this->view->baseUrl( '/styles/jquery-ui.css' ) ) );
 	}
 

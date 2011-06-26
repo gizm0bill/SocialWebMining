@@ -43,6 +43,7 @@ class Twitter extends Stats
 		asort( $res, SORT_NUMERIC );
 		$res = array_reverse( $res, true );
 		$head = array( $hashtag => $res[$hashtag] );
+		$hashtagCount = $res[$hashtag]; // key hashtag count
 		$res = array_merge( $head, $res );
 
 		// write key hashtag
@@ -52,20 +53,21 @@ class Twitter extends Stats
 
 		// write the rest
 		foreach( $res as $relatedHashtag => $value )
+		{
 			$this->write
 			(
 				1,
 				'twitter_related_hashtag',
 				sprintf( CampaignData::getAttributeList()->twitter_related_hashtag, $relatedHashtag, $keyHashtag, $value )
 			);
-
-		/*$cdata = new Model\CampaignData();
-		$cdata->insert( array
-		(
-			Model\CampaignData::getCols()->attr => "twitter_hashtag_result_count",
-			Model\CampaignData::getCols()->val	=> date( "Y-m-d H:i:s" ).",".count( $res['results'] ),
-			Model\CampaignData::getCols()->idCampaign => $campaignId
-		) );*/
+			$relatedPercent = $value / $hashtagCount;
+			$this->write
+			(
+				1,
+				'twitter_related_percent',
+				sprintf( CampaignData::getAttributeList()->twitter_related_hashtag_percent, $relatedHashtag, $keyHashtag, $relatedPercent )
+			);
+		}
 	}
 
 }
