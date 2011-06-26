@@ -28,7 +28,7 @@ class Twitter extends TwitterAgent
 	{
 		$cd = new CampaignData;
 
-		// find last id value for the campaign and searched hashtag
+		// find last id value in the db for the campaign and searched hashtag
 		$select = $cd->select();
 		$row = $cd->fetchRow
 		(
@@ -44,6 +44,8 @@ class Twitter extends TwitterAgent
 			$lastId = explode( ",", $row->val );
 			$lastId = $lastId[1];
 		}
+
+		// make the actual search
 		$srv = new  Zend_Service_Twitter_Search('json');
 		$data = (object) $srv->search( '#'.$hashtag, array
 		(
@@ -51,9 +53,11 @@ class Twitter extends TwitterAgent
 			'rpp' 		=> 100
 		));
 
+		// send it to the stater
 		$s = new CampaingStatsTwitter;
 		$s->statHashtag( 'wikileaks', $data->results );
 
+		// and insert into the db the last searched hastag id
 		$cd->insert( array
 		(
 			CampaignData::getCols()->idCampaign => $idCampaign,

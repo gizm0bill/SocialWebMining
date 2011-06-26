@@ -36,6 +36,14 @@ class Campaign extends DbTable
 		return self::$_attrs;
 	}
 
+	/**
+	 *
+	 * fetches all campaigns with their attributes
+	 * @param string|array|Zend_Db_Table_Select $where
+	 * @param string|array $order
+	 * @param int $count
+	 * @param int $offset
+	 */
 	public function fetchAllWithAttributes( $where = null, $order = null, $count = null, $offset = null )
 	{
 		$campaignRows = $this->fetchAll( $where, $order, $count, $offset );
@@ -43,7 +51,7 @@ class Campaign extends DbTable
 		foreach( $campaignRows as $row )
 		{
 			/* @var $row Ext\Db\Table\Row */
-			$attrs = $row->findAttributes();
+			$attrs = $row->findAttributes(); // magic function for fetching dependent rows
 			$filteredAttrs = array();
 			foreach( $attrs as $attr )
 			{

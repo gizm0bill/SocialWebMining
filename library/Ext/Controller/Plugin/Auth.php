@@ -21,10 +21,22 @@ class Auth extends Plugin
 	 */
 	private $_acl 	= null;
 
-    public function __construct( Zend_Auth $auth, Zend_Acl $acl )
+	/**
+	 * default actions if not logged in
+	 * @var array ( module, controller, action )
+	 */
+	private $_defaults = null;
+
+	/**
+	 * @param Zend_Auth $auth
+	 * @param Zend_Acl $acl
+	 * @param array $defaults default action to go to if no access
+	 */
+    public function __construct( Zend_Auth $auth, Zend_Acl $acl, $defaults )
     {
         $this->_acl		= $acl;
         $this->_auth 	= $auth;
+        $this->_defaults = $defaults;
     }
 
     public function routeShutdown( Zend_Controller_Request_Abstract $request )
@@ -40,7 +52,14 @@ class Auth extends Plugin
         $baseResource = $baseResource[0];
 		if( !$this->_acl->isAllowed( $role, $baseResource, $action )
 			&& !$this->_acl->isAllowed( $role, $resource, $action ) )
-			$request->setModuleName( $defaModule )->setControllerName( 'users' )->setActionName( 'login' );
+		{
+			if( !$this->_defaults['module'] )
+				$this->_defaults['module'] = $defaModule;
+			$request
+				->setModuleName( $this->_defaults['module'] )
+				->setControllerName( $this->_defaults['controller'] )
+				->setActionName( $this->_defaults['action'] );
+		}
     }
 
     /**

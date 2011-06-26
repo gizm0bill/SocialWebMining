@@ -10,16 +10,22 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
 	protected function _initLoader( )
 	{
+		// searches for registered objects in order to load them
 		$autoloader = Zend_Loader_Autoloader::getInstance();
+		// to be able to use the Ext folder from library
 		$autoloader->registerNamespace('Ext');
 
 		// TODO no hardcode the ns
 		$autoloader->registerNamespace('App\Model');
 		$autoloader->registerNamespace('App\Service');
 
+		// loads each service class at a time
 		$servicesIncludePath = $this->_options['includePaths']['services'];
 		$autoloader->pushAutoloader( function( $class ) use ( $servicesIncludePath )
 		{
+			if( class_exists( $class, false ) || interface_exists( $class, false ) )
+            	return;
+
 			$class = str_replace( '\\', DIRSEP, preg_replace( "`^App\\\Service`", $servicesIncludePath, $class ) ) . '.php';
 			if( file_exists( $class ) )
 			{
@@ -35,7 +41,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		{
 			if( class_exists( $class, false ) || interface_exists( $class, false ) )
             	return;
-            // basic lookup for filename
+            // basic lookup for classname = filename
             $filePath = substr( $class, strrpos( $class, "\\" )+1 ).".php";
             if( file_exists( $modelsIncludePath . DIRSEP . $filePath ) )
             {
@@ -56,10 +62,16 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 				require_once $filePath;
 				return;
 			}
+			return false;
 		},  'App\Model' );
+
 		return $autoloader;
 	}
 
+	/**
+	 *
+	 * first initialisation function, calling other loading functions
+	 */
 	protected function _initApp()
 	{
 		$this->bootstrap( 'Loader' );
@@ -239,8 +251,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		$acl->addResource( new Zend_Acl_Resource( "users" ) );
 		$acl->addResource( new Zend_Acl_Resource( "index" ) );
 
-		$acl->allow( "agent", 'index' );
-
+		$acl->allow( 'agent', 'index' );
+		$acl->allow( 'guest', 'error' );
 		// and allow root on everything
 		$acl->allow( 'root' );
 		return $acl;
@@ -255,7 +267,11 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         	$auth->getStorage()->read()->role = 'guest';
         	$auth->getStorage()->write( $auth->getStorage()->read() );
         }
-        $this->getResource( 'FrontController' )->registerPlugin( new ExtraPlugin\Auth( $auth, $this->getResource( 'acl' ) ) );
+        $this->getResource( 'FrontController' )
+        	->registerPlugin
+        	(
+        		new ExtraPlugin\Auth( $auth, $this->getResource( 'acl' ), array( 'controller' => 'users', 'action' => 'login' ) )
+        	);
 	}
 }
 

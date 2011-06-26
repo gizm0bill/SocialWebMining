@@ -7,7 +7,7 @@ use App\Model\Campaign;
 /**
  * request parameter 'id' always specifies a campaign id :)
  */
-class Marketing_CampaignController extends Zend_Controller_Action
+class Management_CampaignController extends Zend_Controller_Action
 {
 	private function userId()
 	{
@@ -149,7 +149,7 @@ class Marketing_CampaignController extends Zend_Controller_Action
 			$this->_helper->flashMessenger( 'Campaign succefully added!' );
 			$this->_helper->redirector( 'edit', 'campaign', 'marketing', array( 'id' => $iid ) );
 		}
-
+		var_dump( $form->getDisplayGroup('attributes0') );
 		$form->addElement( new Zend_Form_Element_Submit( array
 		(
 			'name' 	=> 'submit-button',
@@ -186,6 +186,7 @@ class Marketing_CampaignController extends Zend_Controller_Action
 				if( strpos( $k, CampaignAttributes::getCols()->val ) !== false )
 					$postAttrs[CampaignAttributes::getCols()->val][] = $v;
 			}
+
 			// add attributes
 			$ca = new CampaignAttributes;
 			$ca->delete( array( CampaignAttributes::getCols()->idCampaign => $postData[Campaign::getCols()->id] ) );
@@ -193,7 +194,7 @@ class Marketing_CampaignController extends Zend_Controller_Action
 			{
 				try
 				{
-					if( trim( $val = $postAttrs[CampaignAttributes::getCols()->val][$k] ) != '' )
+					if( trim( ( $val = $postAttrs[CampaignAttributes::getCols()->val][$k] ) ) != '' )
 						$ca->insert( array
 						(
 							CampaignAttributes::getCols()->attr => $attr,
@@ -203,7 +204,7 @@ class Marketing_CampaignController extends Zend_Controller_Action
 				}
 				catch( \Exception $e )
 				{
-					$form->setErrorMessages( array( $e->getMessage() ) );
+					$formErrorMessages = array( $e->getMessage() );
 				}
 			}
 		} // endif post data
@@ -212,6 +213,9 @@ class Marketing_CampaignController extends Zend_Controller_Action
 		$this->view->campaign = (object) $campaign;
 
 		$form = $this->_makeCampaignForm( $campaign );
+
+		// set error messages from attributes if any
+		if( isset($formErrorMessages) ) $form->setErrorMessages($formErrorMessages);
 
 		if( count( $postData ) && $form->isValid( $postData ) )
 		{
