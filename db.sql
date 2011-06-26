@@ -1,5 +1,4 @@
 
-
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 --
@@ -20,7 +19,7 @@ CREATE TABLE `campaign` (
   `to` datetime DEFAULT NULL,
   PRIMARY KEY (`id_campaign`),
   KEY `id_user` (`id_user`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `campaign`
@@ -28,6 +27,7 @@ CREATE TABLE `campaign` (
 
 INSERT INTO `campaign` VALUES(1, 1, 'A badass twitter campaign', '2011-06-01 00:00:00', '2011-06-30 00:00:00');
 INSERT INTO `campaign` VALUES(4, 1, 'A badass twitter campaign', '2011-06-01 00:00:00', '2011-06-30 00:00:00');
+INSERT INTO `campaign` VALUES(5, 1, 'test', '2011-06-26 00:00:00', '2011-06-30 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -48,9 +48,8 @@ CREATE TABLE `campaign_attr` (
 -- Dumping data for table `campaign_attr`
 --
 
-INSERT INTO `campaign_attr` VALUES(1, 'twitter_hashtag', 'a');
-INSERT INTO `campaign_attr` VALUES(1, 'twitter_hashtag', 'wikileaks');
-INSERT INTO `campaign_attr` VALUES(1, 'twitter_replyto', 'asd');
+INSERT INTO `campaign_attr` VALUES(1, 'twitter_hashtag', 'x');
+INSERT INTO `campaign_attr` VALUES(1, 'twitter_hashtag', 'xx');
 
 -- --------------------------------------------------------
 
@@ -73,65 +72,50 @@ CREATE TABLE `campaign_data` (
 -- Dumping data for table `campaign_data`
 --
 
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_hashtag', 'wikileaks,100');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'assange,wikileaks,16');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'anonymous,wikileaks,12');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'google,wikileaks,8');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'antisec,wikileaks,8');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'cablegate,wikileaks,7');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'anonymiss,wikileaks,7');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'lulzsec,wikileaks,6');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'duckpond,wikileaks,6');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'blog,wikileaks,5');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'chavez,wikileaks,3');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'teamfollowback,wikileaks,3');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'god,wikileaks,3');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'manning,wikileaks,2');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'hrafnsson,wikileaks,2');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'lulzsecbrasil,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'ala11,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'p2,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'corrupacao,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'australia,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'nz,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'freespeech,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'democracy,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'censorship,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'wiki,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'tfb,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'news,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'bodou,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'brasil,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'lesapatria,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'opitaly,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'libya,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'bahrein,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'algerie,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'indect,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'espana,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'freebradley,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'gaypride,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'banksters,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'fbi,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'opmanning,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'conservatives,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'tunisie,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'censilia,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'petrobras,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'hackers,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'dinnerwithbarack,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'italianrevolution,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'israel,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'lulzsecbrazil,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'venezuela,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'jan25,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'acta,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'ppi,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'presse,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_related_hashtag', 'pirates,wikileaks,1');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:18', 'twitter_agent_hashtag_lastid', 'wikileaks,84778382168035328');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:27', 'twitter_hashtag', 'wikileaks,0');
-INSERT INTO `campaign_data` VALUES(1, '2011-06-26 03:24:27', 'twitter_agent_hashtag_lastid', 'wikileaks,84778382168035328');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_hashtag', 'retailers,15');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'mobile,retailers,5');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'mobile,retailers,0.333333');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'tech,retailers,4');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'tech,retailers,0.266667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'sharesquare,retailers,2');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'sharesquare,retailers,0.133333');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'qrcodes,retailers,2');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'qrcodes,retailers,0.133333');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'shopsavvy,retailers,2');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'shopsavvy,retailers,0.133333');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'li,retailers,2');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'li,retailers,0.133333');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'video,retailers,2');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'video,retailers,0.133333');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'upsell,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'upsell,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'gleem,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'gleem,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'dehumidifier,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'dehumidifier,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'danby,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'danby,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'saxophone,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'saxophone,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'detergent,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'detergent,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'toothpaste,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'toothpaste,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'bed,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'bed,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'shopping,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'shopping,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'scanner,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'scanner,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'barcode,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'barcode,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'win,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'win,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_hashtag', 'bathtub,retailers,1');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_related_percent', 'bathtub,retailers,0.066667');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:52:46', 'twitter_agent_hashtag_lastid', 'retailers,85002040253743104');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:53:41', 'twitter_hashtag', 'retailers,0');
+INSERT INTO `campaign_data` VALUES(1, '2011-06-26 18:53:41', 'twitter_agent_hashtag_lastid', 'retailers,85002040253743104');
 
 -- --------------------------------------------------------
 

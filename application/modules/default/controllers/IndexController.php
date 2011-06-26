@@ -10,8 +10,8 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-    	// $c = new App\Service\Campaign\Agent\Twitter;
-    	// $c->hashtag( 1, 'wikileaks' );
+    	$c = new App\Service\Campaign\Agent\Twitter;
+    	$c->hashtag( 1, 'retailers' );
     }
 }
 

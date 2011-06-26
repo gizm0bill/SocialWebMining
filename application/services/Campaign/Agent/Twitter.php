@@ -40,7 +40,7 @@ class Twitter extends TwitterAgent
 
 		// send it to the stater
 		$s = new CampaingStatsTwitter;
-		$s->statHashtag( 'wikileaks', $data->results );
+		$s->statHashtag( $idCampaign, $hashtag, $data->results );
 
 		// and insert into the db the last searched hastag id
 		$cd->insert( array

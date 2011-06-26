@@ -10,11 +10,11 @@ class Twitter extends Stats
 {
 	public function statSentiments( $batch )
 	{
-		$wn = new Wordnet;
-		$wn->senses( "star" );
+		//$wn = new Wordnet;
+		//$wn->senses( "star" );
 	}
 
-	public function statHashtag( $hashtag, $batch )
+	public function statHashtag( $idCampaign, $hashtag, $batch )
 	{
 		$res = array();
 		foreach( $batch as $tweet ) // process tweets, find hastags
@@ -32,7 +32,7 @@ class Twitter extends Stats
 		{
 			$this->write
 			(
-				1,
+				$idCampaign,
 				'twitter_hashtag',
 				sprintf( CampaignData::getAttributeList()->twitter_hashtag, $hashtag, 0 )
 			);
@@ -56,14 +56,14 @@ class Twitter extends Stats
 		{
 			$this->write
 			(
-				1,
+				$idCampaign,
 				'twitter_related_hashtag',
 				sprintf( CampaignData::getAttributeList()->twitter_related_hashtag, $relatedHashtag, $keyHashtag, $value )
 			);
 			$relatedPercent = $value / $hashtagCount;
 			$this->write
 			(
-				1,
+				$idCampaign,
 				'twitter_related_percent',
 				sprintf( CampaignData::getAttributeList()->twitter_related_hashtag_percent, $relatedHashtag, $keyHashtag, $relatedPercent )
 			);
