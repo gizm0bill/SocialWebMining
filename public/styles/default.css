@@ -90,6 +90,7 @@ a:hover
 			background-image: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #DADADA);
 			text-shadow: -1px 1px 1px #555;
 			color: #eee;	
+			text-decoration: none
 		}
 		#header #logo .beta
 		{

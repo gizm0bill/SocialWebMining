@@ -1,18 +1,13 @@
 <?php
 
-
-namespace Ext\Service\Campaign;
+namespace Ext\Service;
 
 use App\Model\CampaignData;
 
+/**
+ * @todo implement
+ */
 abstract class Stats
 {
-	/**
-	 * @var App\Model\CampaignData
-	 */
 	protected $_dataModel;
-
-	abstract function write();
-
-	abstract function read();
 }

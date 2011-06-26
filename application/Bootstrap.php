@@ -6,13 +6,29 @@ use Ext\Controller\Plugin as ExtraPlugin,
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
+	protected $_appNamespace = 'App';
+
 	protected function _initLoader( )
 	{
 		$autoloader = Zend_Loader_Autoloader::getInstance();
 		$autoloader->registerNamespace('Ext');
+
 		// TODO no hardcode the ns
 		$autoloader->registerNamespace('App\Model');
-		// TODO check
+		$autoloader->registerNamespace('App\Service');
+
+		$servicesIncludePath = $this->_options['includePaths']['services'];
+		$autoloader->pushAutoloader( function( $class ) use ( $servicesIncludePath )
+		{
+			$class = str_replace( '\\', DIRSEP, preg_replace( "`^App\\\Service`", $servicesIncludePath, $class ) ) . '.php';
+			if( file_exists( $class ) )
+			{
+				require_once $class;
+				return true;
+			}
+			return false;
+		}, 'App\Service' );
+
 		$modelsIncludePath = $this->_options['includePaths']['models'];
 		// register custom namespace loader for models
 		$autoloader->pushAutoloader( function( $class ) use ( $modelsIncludePath )
@@ -85,8 +101,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		$pages = array();
 		$pages[] = new Zend_Navigation_Page_Mvc( array
 		(
-			"label" 		=> "Research and Development",
-			"module"		=> "research",
+			"label" 		=> "Management Area",
+			"module"		=> "management",
         	"controller"	=> "index",
 			"action"		=> "index",
 			"route"			=> "default",
@@ -94,25 +110,25 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 			(
 				new Zend_Navigation_Page_Mvc( array
 				(
-					"label" 		=> "Technology Intelligence",
-					"module"		=> "research",
-		        	"controller"	=> "technology",
+					"label" 		=> "Clients",
+					"module"		=> "management",
+		        	"controller"	=> "client",
 					"action"		=> "index",
 					"route"			=> "default",
 				)),
 				new Zend_Navigation_Page_Mvc( array
 				(
-					"label" 		=> "Trend Scouting",
-					"module"		=> "research",
-		        	"controller"	=> "trend",
+					"label" 		=> "Campaigns",
+					"module"		=> "management",
+		        	"controller"	=> "campaign",
 					"action"		=> "index",
 					"route"			=> "default",
 				)),
 				new Zend_Navigation_Page_Mvc( array
 				(
-					"label" 		=> "Consumer Behvaior Analysis",
-					"module"		=> "research",
-		        	"controller"	=> "consumer",
+					"label" 		=> "News",
+					"module"		=> "management",
+		        	"controller"	=> "news",
 					"action"		=> "index",
 					"route"			=> "default",
 				))
@@ -145,6 +161,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 				)),
 				new Zend_Navigation_Page_Mvc( array
 				(
+					"label" 		=> "Trend Scouting",
+					"module"		=> "marketing",
+		        	"controller"	=> "community",
+					"action"		=> "index",
+					"route"			=> "default",
+				)),
+				new Zend_Navigation_Page_Mvc( array
+				(
 					"label" 		=> "Community Detection",
 					"module"		=> "marketing",
 		        	"controller"	=> "community",
@@ -172,9 +196,17 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 				)),
 				new Zend_Navigation_Page_Mvc( array
 				(
-					"label" 		=> "Customer Feedback Analysis",
+					"label" 		=> "Customer Behavior Analysis",
 					"module"		=> "customer",
 		        	"controller"	=> "customer",
+					"action"		=> "index",
+					"route"			=> "default",
+				)),
+				new Zend_Navigation_Page_Mvc( array
+				(
+					"label" 		=> "Community extrapolation",
+					"module"		=> "customer",
+		        	"controller"	=> "community",
 					"action"		=> "index",
 					"route"			=> "default",
 				))

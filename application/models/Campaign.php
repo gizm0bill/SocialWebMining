@@ -120,8 +120,33 @@ class CampaignData extends DbTable
 	(
 		'idCampaign' => 'id_campaign',
 		'attr' 		 => 'attr',
-		'val'		 => 'val'
+		'val'		 => 'val',
+		'time'		 => 'time'
 	);
+
+	/**
+	 * attributes ment to define how to store data
+	 * 		twitter_hashtag = hashtag, count
+	 * 		twitter_related_hashtag = related hashtag, hashtag, count
+	 *		twitter_agent_hashtag_lastid = hashtag, tweet id
+	 *
+	 * warning: mind the replacement types in the format cause it can break on huge numbers for example
+	 * @var array
+	 */
+	protected static $_attrs = array
+	(
+		'twitter_hashtag' 				=> '%s,%d',
+		'twitter_related_hashtag' 		=> '%s,%s,%d',
+		'twitter_agent_hashtag_lastid' 	=> '%s,%s'
+	);
+
+	/**
+	 * @see self::$_attrs
+	 */
+	public static function getAttributeList()
+	{
+		return (object) self::$_attrs;
+	}
 
 	/**
 	 *
@@ -145,6 +170,6 @@ class CampaignData extends DbTable
 		$select->limit( $count, $offset );
 
 		$campaignRows = $this->fetchAll( $select );
-		var_dump( $campaignRows );
+		return $campaignRows;
 	}
 }

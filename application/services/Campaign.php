@@ -1,11 +1,14 @@
 <?php
 
-namespace Ext\Service\Campaign;
+namespace App\Service;
 
-use Ext\Service\Agent as AbstractAgent,
-	Ext\Service\Campaign\Agent\Twitter;
+use App\Service\Campaign\Agent\Twitter;
 
-class Agent extends AbstractAgent
+/**
+ * the campaign service
+ * @todo implement
+ */
+class Campaign
 {
 	/**
 	 * @var Ext\Service\Campaign\Agent\Twitter

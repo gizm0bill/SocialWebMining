@@ -14,13 +14,13 @@ Setting Up Your VHOST
 The following is a sample VHOST you might want to consider for your project.
 
 <VirtualHost *:80>
-   DocumentRoot "/Users/mihaibalaceanu/Sites/SocialWebMining/public"
+   DocumentRoot "/path/to/this/project/public"
    ServerName SocialWebMining.local
 
    # This should be omitted in the production environment
    SetEnv APPLICATION_ENV development
 
-   <Directory "/Users/mihaibalaceanu/Sites/SocialWebMining/public">
+   <Directory "/path/to/this/project/public">
        Options Indexes MultiViews FollowSymLinks
        AllowOverride All
        Order allow,deny
