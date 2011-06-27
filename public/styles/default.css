@@ -242,7 +242,11 @@ h2
 	margin: 18px 0;
 	font: bold 16px sans-serif 
 }
-				
+h3
+{
+	margin: 10px 0;
+	font: bold 16px sans-serif 
+}				
 div.list 
 {
 	display:table;

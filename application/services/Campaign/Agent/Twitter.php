@@ -33,7 +33,7 @@ class Twitter extends TwitterAgent
 		return $campaign;
 	}
 
-	public function hashtag( $idCampaign, $hashtag )
+	public function hashtag( $idCampaign, $hashtag, $isRelated=false )
 	{
 		$s = new CampaingStatsTwitter;
 		$shares = $s->getHashtagStatShares( $idCampaign, $hashtag );
@@ -43,6 +43,8 @@ class Twitter extends TwitterAgent
 		$ca = new CampaignAttributes;
 		foreach( $shares as $relHashtag => $share )
 		{
+			$doAddNewHashtag = false;
+			// between low bounds, do word similarity search
 			if( $share > self::HASHTAG_RELATED_LOW_PERC && $share < self::HASHTAG_RELATED_HIGH_PERC)
 			{
 				$wn = new Wordnet();
@@ -52,16 +54,21 @@ class Twitter extends TwitterAgent
 					foreach( $c['attrs'] as $attr )
 						if( ( $attr['attr'] == 'twitter_hashtag' || $attr['attr'] == 'twitter_related_hashtag' )
 							&& $attr['val'] == $relHashtag )
-							continue(2);
-
-					$ca->insert( array
-					(
-						CampaignAttributes::getCols()->attr => 'twitter_related_hashtag',
-						CampaignAttributes::getCols()->val => $relHashtag,
-						CampaignAttributes::getCols()->idCampaign => $idCampaign
-					));
+							continue 2;
+					$doAddNewHashtag = true;
 				}
 			}
+			// after high bound add automatically
+			if( $share > self::HASHTAG_RELATED_HIGH_PERC )
+				$doAddNewHashtag = true;
+
+			if( $doAddNewHashtag )
+				$ca->insert( array
+				(
+					CampaignAttributes::getCols()->attr => 'twitter_related_hashtag',
+					CampaignAttributes::getCols()->val => $relHashtag,
+					CampaignAttributes::getCols()->idCampaign => $idCampaign
+				));
 		}
 
 		$cd = new CampaignData;
@@ -90,7 +97,7 @@ class Twitter extends TwitterAgent
 		));
 
 		// send it to the stater
-		$s->statHashtag( $idCampaign, $hashtag, $data->results );
+		$s->statHashtag( $idCampaign, $hashtag, $data->results, $isRelated );
 
 		// and insert into the db the last searched hastag id
 		$cd->insert( array

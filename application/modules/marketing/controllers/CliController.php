@@ -60,17 +60,15 @@ class Marketing_CliController extends Zend_Controller_Action
 						$jobs[] = "hashtag: #{$attr['val']}";
 						break;
 					case 'twitter_related_hashtag' :
-						$twSrv->hashtag( $campaign[Campaign::getCols()->id], $attr['val'] );
+						$twSrv->hashtag( $campaign[Campaign::getCols()->id], $attr['val'], true );
 						$jobs[] = "related hashtag: #{$attr['val']}";
 						break;
 				}
 			}
 
-			$jobCfg = new Zend_Config( array( 'jobs' => $jobs ) );
-			$cfg->merge( $jobCfg );
+			$cfg->jobs = $jobs;
 			$newCfg->setConfig( $cfg );
 			$newCfg->write( $controlPoint );
-			unset( $jobCfg );
 
 			ob_flush();
 			sleep( 180 ); // sleep one hour... or 3 minutes

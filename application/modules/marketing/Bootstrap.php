@@ -15,10 +15,10 @@ class Marketing_Bootstrap extends Zend_Application_Module_Bootstrap
 		$acl->addResource( new Zend_Acl_Resource( "marketing" ) );
 		$acl->addResource( new Zend_Acl_Resource( "marketing:campaign" ) );
 		$acl->addResource( new Zend_Acl_Resource( "marketing:cli" ) );
-		$acl->addResource( new Zend_Acl_Resource( "marketing:detection" ) );
+		$acl->addResource( new Zend_Acl_Resource( "marketing:community" ) );
 
 		$acl->allow( 'agent', 'marketing:campaign' );
+		$acl->allow( 'agent', 'marketing:community' );
 		$acl->allow( 'worker', 'marketing:cli' );
-		$acl->allow( 'agent', 'marketing:cli' );
 	}
 }

@@ -1,0 +1,30 @@
+<div class="section">
+	<a name="top"></a>
+	<div class="title">
+		<h1 class="info">
+			Detected communities for campaign: <?php echo $this->campaign['title'] ?>
+		</h1>
+	</div>
+	<div class="left">
+		<ul>
+		<?php foreach( $this->communityStats['community'] as $hashtag => $com ) : ?>
+			<li><strong>#<?php echo $hashtag ?></strong></li>
+			<?php foreach( $com as $id => $u ) : ?>
+				<li><a href="http://twitter.com/<?php echo $u ?>"><?php echo $u ?></a></li>
+			<?php endforeach; ?>
+		<?php endforeach; ?>
+		</ul>
+	</div>
+	<div class="right">
+		<h3>Related:</h3>
+		<ul>
+		<?php foreach( $this->communityStats['related'] as $hashtag => $com ) : ?>
+			<li><strong>#<?php echo $hashtag ?></strong></li>
+			<?php foreach( $com as $id => $u  ) : ?>
+				<li><a href="http://twitter.com/<?php echo $u ?>"><?php echo $u ?></a></li>
+			<?php endforeach; ?>
+		<?php endforeach; ?>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>

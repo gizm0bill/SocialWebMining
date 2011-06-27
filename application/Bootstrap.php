@@ -120,14 +120,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 			"route"			=> "default",
 			"pages"			=> array
 			(
-				new Zend_Navigation_Page_Mvc( array
+				/*new Zend_Navigation_Page_Mvc( array
 				(
 					"label" 		=> "Clients",
 					"module"		=> "management",
 		        	"controller"	=> "client",
 					"action"		=> "index",
 					"route"			=> "default",
-				)),
+				)),*/
 				new Zend_Navigation_Page_Mvc( array
 				(
 					"label" 		=> "Campaigns",
@@ -136,14 +136,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 					"action"		=> "index",
 					"route"			=> "default",
 				)),
-				new Zend_Navigation_Page_Mvc( array
+				/*new Zend_Navigation_Page_Mvc( array
 				(
 					"label" 		=> "News",
 					"module"		=> "management",
 		        	"controller"	=> "news",
 					"action"		=> "index",
 					"route"			=> "default",
-				))
+				))*/
 			)
 		));
 		$pages[] = new Zend_Navigation_Page_Mvc( array
@@ -155,14 +155,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 			"route"			=> "default",
 			"pages"			=> array
 			(
-				new Zend_Navigation_Page_Mvc( array
+				/*new Zend_Navigation_Page_Mvc( array
 				(
 					"label" 		=> "Brand Image Analysis",
 					"module"		=> "marketing",
 		        	"controller"	=> "brand",
 					"action"		=> "index",
 					"route"			=> "default",
-				)),
+				)),*/
 				new Zend_Navigation_Page_Mvc( array
 				(
 					"label" 		=> "Campaign Evaluation",
@@ -171,14 +171,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 					"action"		=> "index",
 					"route"			=> "default",
 				)),
-				new Zend_Navigation_Page_Mvc( array
+				/*new Zend_Navigation_Page_Mvc( array
 				(
 					"label" 		=> "Trend Scouting",
 					"module"		=> "marketing",
 		        	"controller"	=> "community",
 					"action"		=> "index",
 					"route"			=> "default",
-				)),
+				)),*/
 				new Zend_Navigation_Page_Mvc( array
 				(
 					"label" 		=> "Community Detection",
@@ -189,7 +189,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 				))
 			)
 		));
-		$pages[] = new Zend_Navigation_Page_Mvc( array
+		/*$pages[] = new Zend_Navigation_Page_Mvc( array
 		(
 			"label" 		=> "Customer Service",
 			"module"		=> "customer",
@@ -223,11 +223,11 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 					"route"			=> "default",
 				))
 			)
-		));
+		));*/
 		$pages[] = new Zend_Navigation_Page_Mvc( array
 		(
 			"label" 		=> "Contact and Support",
-			"module"		=> "research",
+			"module"		=> "default",
         	"controller"	=> "index",
 			"action"		=> "contact",
 			"route"			=> "default",

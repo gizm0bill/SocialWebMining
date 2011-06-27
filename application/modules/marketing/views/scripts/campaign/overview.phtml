@@ -8,17 +8,17 @@
 	<div style="width:720px">
 	<?php foreach( $this->hashtagStats as $hashtag => $vals ) : ?>
 
-		<h3>Hashtag results for #<?=$hashtag?>:</h3>
+		<h3>Hashtag #<?=$hashtag?> produced these related:</h3>
 
 		<?php foreach( $vals as $relHashtag => $val ) : ?>
 			<?php if( ( $perc = $val*100 ) <= 1 ) continue; ?>
 			<?php if( $relHashtag !== $hashtag ) : ?>
 
-			<div class="fl ar" style="width:200px; margin-top:5px; margin-right:10px;">
+			<div class="fl ar" style="width:200px; margin-bottom:5px; margin-right:10px;">
 				#<?php echo $relHashtag ?> <?php echo number_format( $perc, 3 ) ?>%
 			</div>
 			<div class="fl" style="width:500px">
-				<div class="fl" style="height: 25px;width: <?php echo number_format( $perc, 0 ) ?>%; background: #ccc; margin-bottom:5px;">
+				<div class="fl" style="height: 20px;width: <?php echo number_format( $perc, 0 ) ?>%; background: #ccc; margin-bottom:5px;">
 
 				</div>
 			</div>

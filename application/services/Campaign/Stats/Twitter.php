@@ -15,9 +15,10 @@ class Twitter extends Stats
 		//$wn->senses( "star" );
 	}
 
-	public function statHashtag( $idCampaign, $hashtag, $batch )
+	public function statHashtag( $idCampaign, $hashtag, $batch, $isRelated=false )
 	{
 		$res = array();
+		$community = array();
 		foreach( $batch as $tweet ) // process tweets, find hastags
 		{
 			preg_match_all( "`#([a-zA-Z0-9_]+)`", $tweet['text'], $m );
@@ -27,6 +28,18 @@ class Twitter extends Stats
 				if( !isset( $res[$tag] ) ) $res[$tag] = 0;
 				$res[$tag]++;
 			}
+			$community[$tweet['from_user_id_str']] = $tweet['from_user'];
+		}
+
+		// add community detection
+		foreach( $community as $userId => $userName )
+		{
+			$this->write
+			(
+				$idCampaign,
+				( $isRelated ? 'twitter_hashtag_related_community' : 'twitter_hashtag_community' ),
+				sprintf( CampaignData::getAttributeList()->twitter_hashtag_community, $hashtag, $userId, $userName )
+			);
 		}
 
 		if( !count( $res ) ) // write zero results if the hastag is not found
@@ -110,4 +123,32 @@ class Twitter extends Stats
 		return $totalResults;
 	}
 
+	public function getCommunity( $idCampaign )
+	{
+		$cd = new CampaignData;
+		$select = $cd->select();
+		// selecting data based on hashtag, sorted ASCENDING to make the calculations correctly
+		$all = $cd->fetchAll
+		(
+			$select
+				->where( CampaignData::getCols()->attr . " LIKE 'twitter_%' " )
+				->where( CampaignData::getCols()->idCampaign . " = ? ", $idCampaign ),
+			$select->order( CampaignData::getCols()->time .' '. Zend_Db_Select::SQL_ASC )
+		);
+		$community = $communityRelated = array();
+		foreach( $all as $row )
+		{
+			if( $row->{CampaignData::getCols()->attr} == 'twitter_hashtag_community' )
+			{
+				$tagVal = explode( ",", $row->{CampaignData::getCols()->val} );
+				$community[$tagVal[0]][$tagVal[1]] = $tagVal[2];
+			}
+			if( $row->{CampaignData::getCols()->attr} == 'twitter_hashtag_related_community' )
+			{
+				$tagVal = explode( ",", $row->{CampaignData::getCols()->val} );
+				$communityRelated[$tagVal[0]][$tagVal[1]] = $tagVal[2];
+			}
+		}
+		return array( 'community' => $community, 'related' => $communityRelated );
+	}
 }
