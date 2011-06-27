@@ -33,6 +33,22 @@ class Wordnet
 		"r" => self::WORD_TYPE_ADV
 	);
 
+	/**
+	 * command to test similarity between words
+	 * @var string
+	 */
+	private $_wnsimilcmd = '';
+
+	public function __construct()
+	{
+		$this->_wnsimilcmd = "/usr/bin/python2.7 ".realpath(APPLICATION_PATH."/bin/wnsimilarity.py")." %s %s";
+	}
+
+	public function getSimilarity( $word1, $word2 )
+	{
+		return exec( sprintf( $this->_wnsimilcmd, $word1, $word2 ), $out, $ret );
+	}
+
 	public function senses( $word )
 	{
 		$wnData = '';

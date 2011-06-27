@@ -1,5 +1,8 @@
 <?php
 
+// use App\Service\Worker;
+// use Ext\Wordnet;
+
 class IndexController extends Zend_Controller_Action
 {
 
@@ -10,8 +13,13 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-    	$c = new App\Service\Campaign\Agent\Twitter;
-    	$c->hashtag( 1, 'retailers' );
+    	// testing
+    	# $c = new App\Service\Campaign\Agent\Twitter;
+    	# $c->hashtag( 1, 'retailers' );
+    	//$w = new Worker();
+    	//var_dump( $w->start( 'marketing', 'cli', 'campaign', array( 'id' => '1' ) ) );
+    	//$cs = new App\Service\Campaign\Stats\Twitter;
+    	//$cs->getHashtagStats( 1, 'retailers' );
     }
 }
 

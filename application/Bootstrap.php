@@ -232,6 +232,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 			"action"		=> "contact",
 			"route"			=> "default",
 		));
+		$pages[] = new Zend_Navigation_Page_Mvc( array
+		(
+			"label" 		=> "Logout",
+			"module"		=> "default",
+        	"controller"	=> "users",
+			"action"		=> "logout",
+			"route"			=> "default"
+		));
 		$nav->addPages( $pages );
 		$view->navigation( $nav );
 		return $nav;

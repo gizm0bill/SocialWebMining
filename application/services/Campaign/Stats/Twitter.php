@@ -4,7 +4,8 @@ namespace App\Service\Campaign\Stats;
 
 use App\Service\Campaign\Stats,
 	App\Model\CampaignData,
-	Ext\Wordnet;
+	Ext\Wordnet,
+	Zend_Db_Select;
 
 class Twitter extends Stats
 {
@@ -47,27 +48,66 @@ class Twitter extends Stats
 		$res = array_merge( $head, $res );
 
 		// write key hashtag
-		$this->write( 1, 'twitter_hashtag', sprintf( CampaignData::getAttributeList()->twitter_hashtag, $hashtag, current($res) ) );
+		$this->write( $idCampaign, 'twitter_hashtag', sprintf( CampaignData::getAttributeList()->twitter_hashtag, $hashtag, current($res) ) );
 		$keyHashtag = key($res);
 		array_shift( $res );
 
 		// write the rest
 		foreach( $res as $relatedHashtag => $value )
 		{
+			if( strlen( $relatedHashtag ) < 2 ) continue;
+
 			$this->write
 			(
 				$idCampaign,
 				'twitter_related_hashtag',
-				sprintf( CampaignData::getAttributeList()->twitter_related_hashtag, $relatedHashtag, $keyHashtag, $value )
+				sprintf( CampaignData::getAttributeList()->twitter_related_hashtag, $keyHashtag, $relatedHashtag, $value )
 			);
 			$relatedPercent = $value / $hashtagCount;
 			$this->write
 			(
 				$idCampaign,
 				'twitter_related_percent',
-				sprintf( CampaignData::getAttributeList()->twitter_related_hashtag_percent, $relatedHashtag, $keyHashtag, $relatedPercent )
+				sprintf( CampaignData::getAttributeList()->twitter_related_hashtag_percent, $keyHashtag, $relatedHashtag, $relatedPercent )
 			);
 		}
+	}
+
+	public function getHashtagStatShares( $idCampaign, $hashtag )
+	{
+		$cd = new CampaignData;
+		$select = $cd->select();
+		// selecting data based on hashtag, sorted ASCENDING to make the calculations correctly
+		$all = $cd->fetchAll
+		(
+			$select
+				->where( CampaignData::getCols()->attr . " LIKE 'twitter_%' " )
+				->where( CampaignData::getCols()->val . " LIKE '$hashtag%' " )
+				->where( CampaignData::getCols()->idCampaign . " = ? ", $idCampaign ),
+			$select->order( CampaignData::getCols()->time .' '. Zend_Db_Select::SQL_ASC )
+		);
+
+		// calculate share parts for each segment of data
+		$share = $relatedShare = $totalResults = array();
+		foreach( $all as $row )
+		{
+			if( $row->{CampaignData::getCols()->attr} == 'twitter_hashtag' )
+			{
+				$tagVal = explode( ",", $row->{CampaignData::getCols()->val} );
+				$share[] = $currentShare = $tagVal[1];
+			}
+			if( $row->{CampaignData::getCols()->attr} == 'twitter_related_percent' )
+			{
+				$relatedTagVal = explode( ",", $row->{CampaignData::getCols()->val} );
+				if( strlen( $relatedTagVal[1] ) < 2 ) continue;
+				$relatedShare[$relatedTagVal[1]][] = $relatedTagVal[2] * $currentShare;
+			}
+		}
+		$totalResults[$hashtag] = array_sum( $share );
+		foreach( $relatedShare as $k => $v )
+			$totalResults[$k] = array_sum( $v ) / $totalResults[$hashtag];
+
+		return $totalResults;
 	}
 
 }

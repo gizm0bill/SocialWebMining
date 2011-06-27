@@ -1,5 +1,6 @@
 <?php
 
+use App\Service\Worker;
 use App\Model\CampaignData;
 use App\Model\CampaignAttributes;
 use App\Model\Campaign;
@@ -87,11 +88,12 @@ class Management_CampaignController extends Zend_Controller_Action
 			) ) );
 			$form->setDefaults( $campaign );
 		}
-		$campaign['attrs'] = array();
+
 		if( empty( $campaign['attrs'] ) && !$isAdd ) // set some default null array for one attribute entry
 			$campaign['attrs'] = array( array( 'val' => null, 'attr' => null ) );
 
-		foreach( $campaign['attrs'] as $k => $attr ) // add attributes
+
+		if( isset($campaign['attrs']) ) foreach( $campaign['attrs'] as $k => $attr ) // add attributes
 		{
 			$valElem = new Zend_Form_Element_Text( array
 			(
@@ -224,12 +226,13 @@ class Management_CampaignController extends Zend_Controller_Action
 		{
 			// update campaign
 			$c = new Campaign;
+			$where = $c->getAdapter()->quoteInto( Campaign::getCols()->id . " = ? ", $postData[Campaign::getCols()->id] );
 			$c->update( array
 			(
 				Campaign::getCols()->title 	=> $postData[Campaign::getCols()->title],
 				Campaign::getCols()->from 	=> $postData[Campaign::getCols()->from],
 				Campaign::getCols()->to 	=> $postData[Campaign::getCols()->to],
-			), array( Campaign::getCols()->id => $postData[Campaign::getCols()->id] ) );
+			), $where );
 		}
 
 
@@ -265,23 +268,11 @@ class Management_CampaignController extends Zend_Controller_Action
 		}
 
 		$c = new Campaign;
-		$this->view->campaign = $c->find( $campaignId )->current();
+		$this->view->campaign = $campaign = $c->find( $campaignId )->current();
 
-		$statuses = array();
-		foreach( $this->_workerlist as $action => $title )
-		{
-			$fn = APPLICATION_PATH."/../data/workers/"
-				. $this->_request->getModuleName() . "-"
-				. $action . "-"
-				. $campaignId . ".ini";
-			if( file_exists( $fn ) )
-			{
-				$workerCfg = new Zend_Config_Ini( $fn );
-				$statuses[ $title ] = $workerCfg->status;
-			}
-		}
-
-		$this->view->statuses = $statuses;
+		$worker = new Worker();
+		$this->view->status =
+			$worker->getFullStatus( 'marketing', 'cli', 'campaign', array( 'id' => $campaign[Campaign::getCols()->id] ) );
 	}
 
 	public function workersStartAction()
@@ -289,42 +280,10 @@ class Management_CampaignController extends Zend_Controller_Action
 		$campaign = $this->_getFullCampaignByReqId();
 		$this->view->campaign = (object) $campaign;
 
-		// make cli request command
-		$exec = "(/usr/bin/php ".PUBLIC_PATH ."/index.php -m marketing -c cli -a %s -p 'id=".$campaign['id_campaign']."&%s' &) > /dev/null";
+		$worker = new Worker();
+		$worker->start( 'marketing', 'cli', 'campaign', array( 'id' => $campaign[Campaign::getCols()->id] ) );
 
-		$attrs = $errors = $outputs = array();
-
-		// get all campaign attributes
-		foreach( $campaign['attrs'] as $attr )
-			$attrs[$attr['attr']] = $attr['val'];
-
-		// make worker requests based on registered _workerList
-		foreach( $this->_workerlist as $action => $title )
-		{
-			$fn = APPLICATION_PATH."/../data/workers/"
-				. $this->_request->getModuleName() . "-"
-				. $action . "-"
-				. $campaign['id_campaign'] . ".ini";
-			if( file_exists( $fn ) )
-			{
-				$cfg = new Zend_Config_Ini( $fn, null, true );
-				$cfg->merge( new Zend_Config( array( 'status' => 'running' ) ) );
-				$newCfg = new Zend_Config_Writer_Ini();
-				$newCfg->setConfig( $cfg );
-				$newCfg->write( $fn );
-			}
-			switch( $action )
-			{
-				case 'campaigntw' :
-					$args = ''; //"hashtag=".addslashes( $attrs['twitter_hashtag'] );
-					break;
-			}
-
-			exec( sprintf( $exec, $action, $args ), $x, $r );
-			$outputs[] = "Started worker: '$title'";
-		}
-		$this->view->errors = $errors;
-		$this->view->outputs = $outputs;
+		$this->_helper->redirector( 'edit', 'campaign', 'management', array( 'id' => $campaign[Campaign::getCols()->id] ) );
 	}
 
 	public function workersStopAction()
@@ -332,23 +291,9 @@ class Management_CampaignController extends Zend_Controller_Action
 		$campaign = $this->_getFullCampaignByReqId();
 		$this->view->campaign = (object) $campaign;
 
-		$outputs = array();
-		foreach( $this->_workerlist as $action => $title )
-		{
-			$fn = APPLICATION_PATH."/../data/workers/"
-				. $this->_request->getModuleName() . "-"
-				. $action . "-"
-				. $campaign['id_campaign'] . ".ini";
+		$worker = new Worker();
+		$worker->stop( 'marketing', 'cli', 'campaign', array( 'id' => $campaign[Campaign::getCols()->id] ) );
 
-			// get ini config, merge with stop status, and write
-			$cfg = new Zend_Config_Ini( $fn, null, true );
-			$cfg->merge( new Zend_Config( array( 'status' => 'stopped' ) ) );
-			$newCfg = new Zend_Config_Writer_Ini();
-			$newCfg->setConfig( $cfg );
-			$newCfg->write( $fn );
-
-			$outputs[] = "Stopped worker: '$title'";
-		}
-		$this->view->outputs = $outputs;
+		$this->_helper->redirector( 'edit', 'campaign', 'management', array( 'id' => $campaign[Campaign::getCols()->id] ) );
 	}
 }

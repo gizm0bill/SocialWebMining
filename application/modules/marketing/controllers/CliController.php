@@ -1,6 +1,8 @@
 <?php
 
-use App\Model\Campaign;
+use App\Service\Worker,
+	App\Service\Campaign\Agent\Twitter as TwitterAgent,
+	App\Model\Campaign;
 
 class Marketing_CliController extends Zend_Controller_Action
 {
@@ -13,38 +15,40 @@ class Marketing_CliController extends Zend_Controller_Action
 	const STATUS_RUNNING = 'running';
 	const STATUS_STOPPED = 'stopped';
 
-	public function campaigntwAction()
+	/**
+	 * TODO add to a service/plugin
+	 */
+	private function _getFullCampaignByReqId()
 	{
-		// campaign id
-		$campaignId = $this->_request->getParam('id');
-		if( !$campaignId )
-			return false;
-		// the process data filename
-		$fn = APPLICATION_PATH."/../data/workers/"
-			. $this->_request->getModuleName() . "-"
-			. $this->_request->getActionName() . "-"
-			. $campaignId . ".ini";
-
-		if( !file_exists( $fn ) ) // start worker
-		{
-			$data = "status = ".self::STATUS_RUNNING;
-			file_put_contents( $fn, $data );
-		}
-
-		// TODO put in logs or something cause now it's all going to /dev/null :(
-		echo "started, put '$data' into $fn'";
-		$twSrv = new Ext\Service\Campaign\Agent\Twitter();
 		$c = new Campaign;
 		$campaign = current( $c->fetchAllWithAttributes
 		(
-			$c->select()->where( Campaign::getCols()->id . " = ? ", $campaignId )
+			$c->select()->where( Campaign::getCols()->id . " = ? ", $this->_request->getParam('id') )
 		) );
+		return $campaign;
+	}
 
+	public function campaignAction()
+	{
+		$campaign = $this->_getFullCampaignByReqId();
+		if( !$campaign )
+			return false;
+
+		$worker = new Worker();
+		$status = $worker->getStatus( 'marketing', 'cli', 'campaign', array( 'id' => $campaign[Campaign::getCols()->id] ) );
+		if( $status == Worker::STATUS_STOPPED )
+			return false;
+
+		$controlPoint = $worker->getControlPoint( 'marketing', 'cli', 'campaign', array( 'id' => $campaign[Campaign::getCols()->id] ) );
+
+		$twSrv = new TwitterAgent();
+		$cfg = new Zend_Config_Ini( $controlPoint, null, true );
+		$newCfg = new Zend_Config_Writer_Ini();
 
 		while( true ) // run worker
 		{
-			$cfg = new Zend_Config_Ini( $fn );
-			if( $cfg->status != self::STATUS_RUNNING )
+			$status = $worker->getStatus( 'marketing', 'cli', 'campaign', array( 'id' => $campaign[Campaign::getCols()->id] ) );
+			if( $status == Worker::STATUS_STOPPED )
 				return false;
 
 			foreach( $campaign['attrs'] as $attr )
@@ -52,19 +56,29 @@ class Marketing_CliController extends Zend_Controller_Action
 				switch( $attr['attr'] )
 				{
 					case 'twitter_hashtag' :
-						$twSrv->searchHashtag( $campaignId, 'twitter_hashtag' );
+						$twSrv->hashtag( $campaign[Campaign::getCols()->id], $attr['val'] );
+						$jobs[] = "hashtag: #{$attr['val']}";
+						break;
+					case 'twitter_related_hashtag' :
+						$twSrv->hashtag( $campaign[Campaign::getCols()->id], $attr['val'] );
+						$jobs[] = "related hashtag: #{$attr['val']}";
 						break;
 				}
 			}
 
+			$jobCfg = new Zend_Config( array( 'jobs' => $jobs ) );
+			$cfg->merge( $jobCfg );
+			$newCfg->setConfig( $cfg );
+			$newCfg->write( $controlPoint );
+			unset( $jobCfg );
+
 			ob_flush();
-			sleep( 3600 ); // sleep one hour
+			sleep( 180 ); // sleep one hour... or 3 minutes
 		}
 	}
 
 	public function indexAction()
 	{
-		var_dump( $this->_request->getParams() );
 	}
 
 }

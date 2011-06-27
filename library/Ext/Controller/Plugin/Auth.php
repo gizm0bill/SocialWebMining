@@ -53,7 +53,7 @@ class Auth extends Plugin
 		if( !$this->_acl->isAllowed( $role, $baseResource, $action )
 			&& !$this->_acl->isAllowed( $role, $resource, $action ) )
 		{
-			if( !$this->_defaults['module'] )
+			if( !isset( $this->_defaults['module'] ) )
 				$this->_defaults['module'] = $defaModule;
 			$request
 				->setModuleName( $this->_defaults['module'] )

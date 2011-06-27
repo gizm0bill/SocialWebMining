@@ -47,4 +47,10 @@ class UsersController extends Zend_Controller_Action
 		}
 		$this->view->form = $form;
 	}
+
+	public function logoutAction()
+	{
+		Zend_Auth::getInstance()->clearIdentity();
+		$this->_helper->redirector( "index" );
+	}
 }

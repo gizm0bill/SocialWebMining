@@ -20,7 +20,7 @@ class Campaign
 		$this->_twitterAgent = new Twitter;
 	}
 
-	public function getTwitter()
+	public function getTwitterAgent()
 	{
 		return $this->_twitterAgent;
 	}

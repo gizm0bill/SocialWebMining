@@ -1,0 +1,32 @@
+<div class="section">
+	<a name="top"></a>
+	<div class="title">
+		<h1 class="info">
+			Overview of campaign: <?php echo $this->campaign['title'] ?>
+		</h1>
+	</div>
+	<div style="width:720px">
+	<?php foreach( $this->hashtagStats as $hashtag => $vals ) : ?>
+
+		<h3>Hashtag results for #<?=$hashtag?>:</h3>
+
+		<?php foreach( $vals as $relHashtag => $val ) : ?>
+			<?php if( ( $perc = $val*100 ) <= 1 ) continue; ?>
+			<?php if( $relHashtag !== $hashtag ) : ?>
+
+			<div class="fl ar" style="width:200px; margin-top:5px; margin-right:10px;">
+				#<?php echo $relHashtag ?> <?php echo number_format( $perc, 3 ) ?>%
+			</div>
+			<div class="fl" style="width:500px">
+				<div class="fl" style="height: 25px;width: <?php echo number_format( $perc, 0 ) ?>%; background: #ccc; margin-bottom:5px;">
+
+				</div>
+			</div>
+			<div class="clear"></div>
+			<?php endif; ?>
+		<?php endforeach; ?>
+
+	<?php endforeach; ?>
+	</div>
+	<div class="clear"></div>
+</div>

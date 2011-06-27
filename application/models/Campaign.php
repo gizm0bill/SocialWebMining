@@ -28,6 +28,7 @@ class Campaign extends DbTable
 	protected static $_attrs = array
 	(
 		'twitter_hashtag' => 'Twitter hashtag',
+		'twitter_related_hashtag' => 'Twitter related hashtag',
 		'twitter_replyto' => 'Twitter in reply to'
 	);
 
